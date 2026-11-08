@@ -25,6 +25,11 @@
 
 ---
 
+### 参考区 `content/_refer/`(预览可见、上线忽略)
+
+放示例/草稿/写作参考:本地 `preview.sh` 照常渲染,**上线自动忽略**。
+机制(复用 Quartz 原生规则):`deploy.sh` 设 `QUARTZ_PROD=1` → `quartz.config.ts` 的 `ignorePatterns` 才追加 `_refer/**`;预览不设,故可见。目录内示例见 `_refer/README-图文混排.md`。
+
 ### 图文混排(md 只到块级图;布局用 raw HTML + 工具类)
 
 Quartz 会解析 raw HTML(rehype-raw),它照常进 AST、**里面的图照样被扁平化到 OSS**——不破管线。规则:

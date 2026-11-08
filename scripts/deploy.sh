@@ -27,7 +27,7 @@ fi
 echo "▶ [1/3] 构建(图 URL → $ASSET_BASE)"
 cd "$ENGINE/quartz"
 rm -rf public .quartz-cache
-ASSET_BASE_URL="$ASSET_BASE" npx quartz build -d "$CONTENT"
+QUARTZ_PROD=1 ASSET_BASE_URL="$ASSET_BASE" npx quartz build -d "$CONTENT"
 NIMG=$(find "$PUBLIC/assets" -type f 2>/dev/null | wc -l | tr -d ' ')
 echo "  ✓ 构建完成($NIMG 张图待传 OSS)"
 
