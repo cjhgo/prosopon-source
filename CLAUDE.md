@@ -8,6 +8,7 @@
 ## 核心原则:格式是 md 的「增量」,不是「干扰项」
 
 你的写作流程 = **普通 md**:
+0. (可选)写完先跑 `bash scripts/genfront.sh <file>` 生成 frontmatter 骨架(机械部分),智能补全交 agent。
 1. 在编辑器(cweijan / Obsidian / 任意)里写正文,粘贴图片(cweijan 自动存到 `当前folder/image/<文件名>/<时间戳>.png`,写成标准相对路径——**顺其自然,别手改**)。
 2. 写完把草稿交给 agent:**agent 按本文件第三层,补齐 frontmatter、规整 cover,不碰你的正文文字。**
 
