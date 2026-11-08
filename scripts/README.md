@@ -5,7 +5,7 @@
 ```bash
 scripts/genfront.sh <file.md> [...] # 补 frontmatter 骨架(title/date/tags/description 占位,幂等)
 scripts/preview.sh [端口]        # 本地预览(默认 8080,热重载),改 md 自动刷新
-scripts/deploy.sh  [子域名]      # 构建 + 上线(默认 quartz.junhangc.cn)
+scripts/deploy.sh  [子域名]      # 构建 + 上线(默认 prosopon.junhangc.cn)
 ```
 
 ## 依赖与约定
