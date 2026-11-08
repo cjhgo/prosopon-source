@@ -25,6 +25,24 @@
 
 ---
 
+### 图文混排(md 只到块级图;布局用 raw HTML + 工具类)
+
+Quartz 会解析 raw HTML(rehype-raw),它照常进 AST、**里面的图照样被扁平化到 OSS**——不破管线。规则:
+
+- **图片一律相对路径** `![](image/..)` 或 `<img src="image/..">`。**别用 `![[图|宽]]`**——能显示但绕过扁平化(走 ECS)、普通预览也不认。
+- 块级图(默认上下排)用 md `![]()` 即可;要尺寸/布局再用 HTML。
+- 现成工具类(engine `custom.scss`):
+
+| 想要 | 写法 |
+|---|---|
+| 并排 2 / 3 张 | `<div class="grid2">…</div>` / `<div class="grid3">…</div>` |
+| 自适应画廊(任意张) | `<div class="gallery">` + 若干 `<img>` |
+| 带图注 | `<figure><img src="image/.." width="460"><figcaption>说明</figcaption></figure>` |
+| 文字绕图 | `<img class="float-right" src="image/.." width="220">` + 段落末尾 `<div class="clearfix"></div>` |
+
+⚠️ raw HTML 块**内部的 markdown 不解析**(`**粗体**`、`[[双链]]` 在 HTML 里不生效)——把 md 放到 HTML 块外,或内部改用 HTML 标签。
+✅ 移动端 grid/float 已自动降级(单列 / 不浮动)。
+
 ## 第二层(Quartz 规则 · 写时的最小集)
 
 - **文本链接 = wikilink `[[标题]]`**:只写文件名(不带路径),Quartz 按名全局解析,**跨 folder、挪 folder 都不断**。本地普通预览显字面(可读不可点);用 Obsidian 可点。**不模糊**——错字/异大小写会静默死链,需要别名就在目标 frontmatter 加 `aliases: [...]`。
