@@ -35,17 +35,19 @@
 
 ```yaml
 title:        # 必填。标题(也是 wikilink 目标名,全局唯一)
-type:         # 必填。article | note | moc | excerpt | link
-date:         # 必填。YYYY-MM-DD(首次)
+date:         # 有则显示,无则留白(绝不用 git/文件时间伪造)。YYYY-MM-DD
 modified:     # 可选。YYYY-MM-DD
 tags: []      # 主题标签(驱动 tag 页/graph)
 domain:       # 可选。所属域:cliopolis|beautyseek|agora|storgeros|oikonomia|prosopon
 description:  # 一句话。用于卡片摘要 + SEO + 小红书 caption 种子
-cover:        # 卡片缩略图。★从 content 根算的相对路径★(不是相对本文)
+cover:        # 卡片缩略图。★从 content 根算的相对路径★(不是相对本文);构建时自动扁平化
 platforms: [] # 可选。发布目标,如 [xiaohongshu]
 status:       # 可选。draft | published
-source:       # 可选。excerpt/link 的出处
+source:       # 可选。摘录/外链的出处
 ```
+
+**内容分类只用 folder,不用 `type` 字段**:长文放主题 folder(历史/思考/…),短内容统一放 `随笔/`。
+「长文 vs 短文」信息量太低,不配一个字段——folder 位置即分类。
 
 ---
 
@@ -55,8 +57,8 @@ source:       # 可选。excerpt/link 的出处
 
 1. **读正文,推断并补 frontmatter**(内容感知):
    - `title`:取一级标题或首句凝练;确保**全局唯一**(撞名则加限定词,否则 wikilink 会歧义)。
-   - `type`:看体裁——长文=`article`,短随记=`note`,纯聚合页=`moc`,引用他人=`excerpt`,外链评注=`link`。
-   - `date`:正文/文件无日期时,问用户或用文件 mtime,**转绝对日期**。
+   - **folder**:判断放哪——长文归主题大类(历史/思考/…),短内容归 `随笔/`。不写 type 字段。
+   - `date`:正文里有写(如「crystal 自 2026-08-24」)就抽出来补上;没有就**留空**(宁可不显示,不伪造)。
    - `tags`:从正文主题抽 2–4 个;`domain`:映射到 oikos 域(可留空)。
    - `description`:一句话概括(≤40 字),供卡片/小红书 caption。
 2. **cover(关键·路径规整)**:取**正文第一张图**作 cover;把它的相对路径转成**从 content 根的路径**(= 该 md 所在 folder 前缀 + 正文相对路径)。例:`生活/十月的光.md` 正文 `![](image/十月的光/x.png)` → `cover: 生活/image/十月的光/x.png`。CardList 按根解析 cover,故必须从根写。

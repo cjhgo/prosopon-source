@@ -1,6 +1,5 @@
 ---
 title: 谈谈 AI 时代的组织结构
-type: link
 date: 2026-09-28
 modified: 2026-09-28
 tags: [AI, 组织]

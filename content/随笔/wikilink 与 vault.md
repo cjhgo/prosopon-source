@@ -1,6 +1,5 @@
 ---
 title: wikilink 与 vault
-type: note
 date: 2026-10-07
 modified: 2026-10-07
 tags: [方法, 元]
