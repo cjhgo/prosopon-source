@@ -6,6 +6,7 @@
 scripts/genfront.sh <file.md> [...] # 补 frontmatter 骨架(title/date/tags/description 占位,幂等)
 scripts/preview.sh [端口]        # 本地预览(默认 8080,热重载),改 md 自动刷新
 scripts/deploy.sh  [子域名]      # 构建 + 上线(默认 prosopon.junhangc.cn)
+scripts/covers/coverfetch.py     # 书影音封面抓取(独立 authoring-time 管线,见 covers/README.md)
 ```
 
 ## 依赖与约定
@@ -15,6 +16,7 @@ scripts/deploy.sh  [子域名]      # 构建 + 上线(默认 prosopon.junhangc.c
   - `ALIYUN_OPS=/path/to/oikos/prosopon/skills/aliyun-ops`
   - `PROSOPON_DOMAIN=子域名`(或 deploy.sh 第一个参数)
 - **node 走 nvm**(非 brew);脚本自动把 nvm 最新 node 加进 PATH。
+- **engine 已迁 Quartz v5**:官方插件是 npm 依赖(根 `npm install` 即装);og-image 用 engine 内 `vendor/og-image` fork(已带 `dist/`),无需额外步骤。
 - 预览 = `quartz build -d content --serve`;上线 = 构建 public/ 后交 `aliyun-ops vps deploy-dir`(分块传 + nginx vhost + cert-aware HTTPS)。
 
 ## 流水线

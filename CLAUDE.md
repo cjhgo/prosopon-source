@@ -28,7 +28,7 @@
 ### 参考区 `content/_refer/`(预览可见、上线忽略)
 
 放示例/草稿/写作参考:本地 `preview.sh` 照常渲染,**上线自动忽略**。
-机制(复用 Quartz 原生规则):`deploy.sh` 设 `QUARTZ_PROD=1` → `quartz.config.ts` 的 `ignorePatterns` 才追加 `_refer/**`;预览不设,故可见。目录内示例见 `_refer/README-图文混排.md`。
+机制(复用 Quartz 原生规则):`deploy.sh` 设 `QUARTZ_PROD=1` → engine 的 `quartz.ts` 里 `ignorePatterns` 才追加 `_refer/**`;预览不设,故可见。目录内示例见 `_refer/README-图文混排.md`。
 
 ### 图文混排(md 只到块级图;布局用 raw HTML + 工具类)
 
@@ -48,12 +48,31 @@ Quartz 会解析 raw HTML(rehype-raw),它照常进 AST、**里面的图照样被
 ⚠️ raw HTML 块**内部的 markdown 不解析**(`**粗体**`、`[[双链]]` 在 HTML 里不生效)。尤其:**`<img>` 和正文之间必须空一行**,否则正文被吸进 HTML 块、不是独立 `<p>`,float 就没东西可绕(实测踩坑)。绕图适合横图/方图,竖长图会把文字挤成窄缝。
 ✅ 移动端 grid/float 已自动降级(单列 / 不浮动)。
 
+### Bases（v5）：`*.base` = 查询 + 视图
+
+v5 起支持 Obsidian Bases。`.base` 是 YAML 查询/视图配置，**数据仍在每篇 note 的 frontmatter 里**：
+
+```yaml
+filters:
+  and:
+    - file.inFolder("观影")
+views:
+  - type: table
+    name: 全部
+    order: [title, year, director, rating]
+```
+
+- 一个条目 = 一篇 note（如 `观影/花样年华.md`，frontmatter 写 `director/year/rating/status`）。
+- 视图：`table` / `list` / `cards` / `gallery` / `board`。
+- `.base` 放内容根或 folder 内；产出 URL 目前带 `.base`（如 `/观影.base`），要干净 URL 可用 md 内 ` ```base ` 代码块嵌入。
+- 内容分类仍只认 folder；Bases 是**读 frontmatter 的派生视图**，不是新分类轴。
+
 ## 第二层(Quartz 规则 · 写时的最小集)
 
 - **文本链接 = wikilink `[[标题]]`**:只写文件名(不带路径),Quartz 按名全局解析,**跨 folder、挪 folder 都不断**。本地普通预览显字面(可读不可点);用 Obsidian 可点。**不模糊**——错字/异大小写会静默死链,需要别名就在目标 frontmatter 加 `aliases: [...]`。
-- **图片 = 标准相对路径 `![](相对路径)`**(cweijan 粘图即此,顺其自然)。本地普通预览直接认;上线由 engine 的自定义 transformer `LocalImageToWikilink` 在构建时转成 wikilink 逻辑(解决 Quartz flat-url 下标准相对图会碎的坑)。**作者不用管**——写标准相对即可,两端都完整。别手写 `![[图]]`(本地预览器不认)。
-- **folder = 大类物理分组**(当前占位 `历史/生活/思考`,命名待定):给面包屑用。领域/主题**不靠 folder**,靠 frontmatter。
-- **assets 不手动搬**:图放哪个 folder 都行,Quartz 的 Assets+CrawlLinks 构建时统一搬到 public、改写引用。
+- **图片 = 标准相对路径 `![](相对路径)`**(cweijan 粘图即此,顺其自然)。本地普通预览直接认;上线由 engine 的自定义 transformer `FlattenLocalAssets` 在构建时改写成扁平 `/assets/<hash>`(解决 Quartz flat-url 下标准相对图会碎的坑,并与 slug/OSS 解耦)。**作者不用管**——写标准相对即可,两端都完整。别手写 `![[图]]`(本地预览器不认)。
+- **folder = 大类物理分组**(定稿:`生活/工作/读书/新知/随笔`):给面包屑用。领域/主题**不靠 folder**,靠 frontmatter。
+- **assets 不手动搬**:图放哪个 folder 都行,`FlattenLocalAssets` + `AssetManifest` 构建时统一扁平化到 `/assets/<hash>`、出 `assets-manifest.json`;生产图走 OSS。
 
 ### frontmatter schema(双用:花园展示 + 小红书 SoT)
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # deploy.sh — 构建数字花园并上线。图片走 OSS(assets.junhangc.cn),HTML 走 ECS(nginx)。
 # 用法: scripts/deploy.sh [子域名]
-#   默认子域名 quartz.junhangc.cn;可传参或设 PROSOPON_DOMAIN。
+#   默认子域名 prosopon.junhangc.cn;可传参或设 PROSOPON_DOMAIN。
 # 流程:
 #   1. ASSET_BASE_URL=OSS 域名 → Quartz 构建(HTML 里图 URL 指向 OSS)
 #   2. ossutil sync public/assets/ → OSS 桶(增量,大文件走这)
