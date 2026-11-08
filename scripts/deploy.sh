@@ -13,7 +13,7 @@ ENGINE="${PROSOPON_ENGINE:-$(cd "$SELF/../prosopon-engine" && pwd)}"
 ALIYUN_OPS="${ALIYUN_OPS:-$(cd "$SELF/../oikos/prosopon/skills/aliyun-ops" && pwd 2>/dev/null || echo "")}"
 CONTENT="$SELF/content"
 PUBLIC="$ENGINE/quartz/public"
-DOMAIN="${1:-${PROSOPON_DOMAIN:-quartz.junhangc.cn}}"
+DOMAIN="${1:-${PROSOPON_DOMAIN:-prosopon.junhangc.cn}}"   # 正式站(试运行曾用 quartz.junhangc.cn)
 ASSET_BASE="${ASSET_BASE_URL:-https://assets.junhangc.cn}"   # 图床域名(OSS 自定义域名)
 
 if [ -d "$HOME/.nvm/versions/node" ]; then
