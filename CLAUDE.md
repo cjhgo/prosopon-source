@@ -43,9 +43,9 @@ Quartz 会解析 raw HTML(rehype-raw),它照常进 AST、**里面的图照样被
 | 并排 2 / 3 张 | `<div class="grid2">…</div>` / `<div class="grid3">…</div>` |
 | 自适应画廊(任意张) | `<div class="gallery">` + 若干 `<img>` |
 | 带图注 | `<figure><img src="image/.." width="460"><figcaption>说明</figcaption></figure>` |
-| 文字绕图 | `<img class="float-right" src="image/.." width="220">` + 段落末尾 `<div class="clearfix"></div>` |
+| 文字绕图 | `<img class="float-right" src="image/.." width="220">` **空一行** 再写正文,段落末尾 `<div class="clearfix"></div>` |
 
-⚠️ raw HTML 块**内部的 markdown 不解析**(`**粗体**`、`[[双链]]` 在 HTML 里不生效)——把 md 放到 HTML 块外,或内部改用 HTML 标签。
+⚠️ raw HTML 块**内部的 markdown 不解析**(`**粗体**`、`[[双链]]` 在 HTML 里不生效)。尤其:**`<img>` 和正文之间必须空一行**,否则正文被吸进 HTML 块、不是独立 `<p>`,float 就没东西可绕(实测踩坑)。绕图适合横图/方图,竖长图会把文字挤成窄缝。
 ✅ 移动端 grid/float 已自动降级(单列 / 不浮动)。
 
 ## 第二层(Quartz 规则 · 写时的最小集)
