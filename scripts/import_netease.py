@@ -21,6 +21,7 @@ from __future__ import annotations
 import argparse
 import collections
 import datetime
+import difflib
 import json
 import os
 import re
@@ -139,6 +140,7 @@ def albumize(songs: list[dict]) -> tuple[list[dict], list[dict]]:
                 rec["artists"].append(name)
         rec["songs"].append(
             {
+                "id": song.get("id"),
                 "name": song.get("name") or "",
                 "alias": (song.get("alias") or [None])[0],
                 "duration": song.get("duration") or 0,
@@ -289,11 +291,43 @@ def _fmt_duration(ms: int) -> str:
     return f"{seconds // 60:02d}:{seconds % 60:02d}"
 
 
+def _song_url(song_id) -> str:
+    return f"https://music.163.com/#/song?id={song_id}"
+
+
+def _album_url(album_id) -> str:
+    return f"https://music.163.com/#/album?id={album_id}"
+
+
 def _track_line(song: dict) -> str:
     name = song["name"]
     if song.get("alias"):
         name = f"{name} ({song['alias']})"
+    if song.get("id"):
+        return f"- [{name}]({_song_url(song['id'])}) — {_fmt_duration(song['duration'])}"
     return f"- {name} — {_fmt_duration(song['duration'])}"
+
+
+def _tracks_section(album: dict) -> str:
+    """我喜欢的曲目(每条链到网易云单曲页) + 整专折叠播放器。"""
+    lines = "\n".join(_track_line(s) for s in album["songs"])
+    return f"## 曲目\n\n{lines}\n\n{_player_block(album)}"
+
+
+def _player_block(album: dict) -> str:
+    """整专 outchain 播放器: 默认折叠, 点开可播。"""
+    album_id = album["id"]
+    src = (
+        "https://music.163.com/outchain/player"
+        f"?type=1&id={album_id}&auto=0&height=430"
+    )
+    return (
+        "<details class=\"player\">\n"
+        f"<summary>▶ 网易云播放器 · {album['name']}</summary>\n"
+        f"<iframe frameborder=\"no\" border=\"0\" marginwidth=\"0\" marginheight=\"0\" "
+        f"width=\"100%\" height=\"430\" src=\"{src}\"></iframe>\n"
+        "</details>"
+    )
 
 
 def _safe_stem(title: str) -> str:
@@ -345,6 +379,8 @@ def build_note(album: dict, cand: dict | None, detail: dict, proxy: str) -> tupl
         cover = album["cover"]
         cover_source = f"netease:{source_id}"
 
+    meta["netease_url"] = _album_url(album["id"])
+
     fields = {
         "title": album["name"],
         "medium": "music",
@@ -373,7 +409,7 @@ def build_note(album: dict, cand: dict | None, detail: dict, proxy: str) -> tupl
     body = "\n\n".join(
         [
             f"{nc.COVER_BEGIN}\n![cover]({cover_url_enc})\n{nc.COVER_END}",
-            "## 曲目\n\n" + "\n".join(_track_line(s) for s in album["songs"]),
+            _tracks_section(album),
             nc.render_background("music", meta, source_label=label),
         ]
     ) + "\n"
@@ -428,6 +464,223 @@ def write_note(album: dict, fields: dict, body: str, cover_url: str, cover_sourc
 
 
 # ---------------------------------------------------------------- main
+def _title_map() -> dict[str, str]:
+    """frontmatter title → 笔记路径(既有文件名有 60 字截断, 不能按 stem 找)。"""
+    out = {}
+    for name in os.listdir(MUSIC_DIR):
+        if not name.endswith(".md") or name == "index.md":
+            continue
+        path = os.path.join(MUSIC_DIR, name)
+        try:
+            fm, _, _ = nc.split_frontmatter(open(path, encoding="utf-8").read())
+            title = (fm.get("title") or "").replace('\\"', '"')
+            if title:
+                out[title] = path
+        except Exception:
+            continue
+    return out
+
+
+def refresh_links(albums: list[dict], dry_run: bool = False) -> tuple[int, list[str]]:
+    """回填: 曲目加网易云单曲链接 + 整专播放器 + 资料区专辑链接。"""
+    paths = _title_map()
+    changed, missing = 0, []
+    for album in albums:
+        path = paths.get(album["name"])
+        if not path:
+            missing.append(album["name"])
+            continue
+        text = open(path, encoding="utf-8").read()
+        new_section = _tracks_section(album)
+        updated, n = re.subn(
+            r"## 曲目[^\n]*\n.*?(?=\n<!-- gencover:begin -->|\Z)",
+            new_section + "\n",
+            text,
+            count=1,
+            flags=re.S,
+        )
+        if not n:
+            missing.append(album["name"])
+            continue
+        url = _album_url(album["id"])
+        if url not in updated:
+            updated = re.sub(
+                r"^(- 资料：.*)$",
+                lambda m: f"{m.group(1)} · [网易云音乐]({url})",
+                updated,
+                count=1,
+                flags=re.M,
+            )
+        if updated != text:
+            changed += 1
+            if not dry_run:
+                open(path, "w", encoding="utf-8").write(updated)
+    return changed, missing
+
+
+def _netease_song_search(query: str, limit: int = 8, attempts: int = 4) -> list[dict]:
+    url = (
+        "https://music.163.com/api/search/get/web?s="
+        + urllib.parse.quote(query)
+        + f"&type=1&limit={limit}"
+    )
+    for i in range(attempts):
+        try:
+            data = _get_json(url)
+        except Exception:
+            data = {}
+        if int(data.get("code") or 0) == 406:  # 操作频繁
+            time.sleep(8 * (i + 1))
+            continue
+        return (data.get("result") or {}).get("songs") or []
+    return []
+
+
+def resolve_missing(dry_run: bool = False, songs: list[dict] | None = None) -> tuple[int, list[str]]:
+    """给还没有网易云链接的条目按「曲名 + 艺人」反查单曲, 补链接/专辑链接/播放器。
+
+    先查歌单缓存(零请求), 再走网易云搜索接口(限流很紧)。
+    """
+    by_name: dict[str, list[dict]] = {}
+    by_id: dict[int, dict] = {}
+    for song in songs or []:
+        by_name.setdefault(_norm_keep(song.get("name")), []).append(song)
+        if song.get("id"):
+            by_id[song["id"]] = song
+
+    def cached(plain: str, creator: str) -> dict | None:
+        exact = by_name.get(_norm_keep(plain)) or []
+        for song in exact:
+            artists = [a.get("name") or "" for a in song.get("artists") or []]
+            if creator and not any(
+                _norm_keep(creator) in _norm_keep(a) or _norm_keep(a) in _norm_keep(creator)
+                for a in artists
+            ):
+                continue
+            return song
+        # 曲名拼写有出入(NeoDB 与网易云不一致)时, 同艺人 + 高相似度才认
+        target = _norm_keep(plain)
+        for song in songs or []:
+            artists = [a.get("name") or "" for a in song.get("artists") or []]
+            if not creator or not any(
+                _norm_keep(creator) in _norm_keep(a) or _norm_keep(a) in _norm_keep(creator)
+                for a in artists
+            ):
+                continue
+            if difflib.SequenceMatcher(None, target, _norm_keep(song.get("name"))).ratio() >= 0.88:
+                return song
+        return None
+
+    changed, unresolved = 0, []
+    for name in sorted(os.listdir(MUSIC_DIR)):
+        if not name.endswith(".md") or name == "index.md":
+            continue
+        path = os.path.join(MUSIC_DIR, name)
+        text = open(path, encoding="utf-8").read()
+        if "outchain/player" in text:
+            continue
+        fm, _, _ = nc.split_frontmatter(text)
+        creator = (fm.get("creator") or "").split(" / ")[0]
+        album_ids: collections.Counter = collections.Counter()
+        hit = 0
+
+        def link_line(match: re.Match) -> str:
+            nonlocal hit
+            # 兼容两种既有写法: "- 曲名 — 时长" 和 "- 曲名 — 艺人 — 时长"
+            raw_name, line_artist, dur = match.group(1), match.group(2) or "", match.group(3)
+            if raw_name.startswith("["):  # 已经链过
+                hit += 1
+                return match.group(0)
+            raw_name = raw_name.replace("**", "")
+            artist = line_artist.replace("**", "").split(" / ")[0].strip() or creator
+            mid = f" — {line_artist.replace('**','')}" if line_artist else ""
+            plain = re.sub(r"\s*\([^)]*\)\s*$", "", raw_name).strip()
+
+            found = cached(raw_name, artist) or cached(plain, artist)
+            if found:
+                hit += 1
+                album = found.get("album") or {}
+                if album.get("id"):
+                    album_ids[album["id"]] += 1
+                return f"- [{raw_name}]({_song_url(found['id'])}){mid} — {dur}"
+
+            for song in _netease_song_search(f"{plain} {artist}"):
+                song_plain = re.sub(r"\s*\([^)]*\)\s*$", "", song.get("name") or "").strip()
+                artists = [a.get("name") or "" for a in song.get("artists") or []]
+                if _norm_keep(song_plain) != _norm_keep(plain):
+                    continue
+                if artist and not any(_norm_keep(artist) in _norm_keep(a) or _norm_keep(a) in _norm_keep(artist) for a in artists):
+                    continue
+                hit += 1
+                album = song.get("album") or {}
+                if album.get("id"):
+                    album_ids[album["id"]] += 1
+                return f"- [{raw_name}]({_song_url(song['id'])}){mid} — {dur}"
+            return match.group(0)
+
+        updated = re.sub(
+            r"^- (.*?)(?: — (.*?))? — (\d\d:\d\d)$", link_line, text, flags=re.M
+        )
+        # 已有单曲链接的条目(上一轮部分成功): 从 song/detail 反推专辑, 补播放器
+        existing_ids = [int(i) for i in re.findall(r"music\.163\.com/#/song\?id=(\d+)", updated)]
+        if existing_ids and not album_ids:
+            for sid in existing_ids:  # 歌单缓存里就有专辑归属, 不必打接口
+                album = (by_id.get(sid) or {}).get("album") or {}
+                if album.get("id"):
+                    album_ids[album["id"]] += 1
+            missing_ids = [i for i in existing_ids if i not in by_id]
+            if missing_ids:
+                try:
+                    data = _get_json(
+                        "https://music.163.com/api/song/detail?ids=["
+                        + ",".join(map(str, missing_ids[:10]))
+                        + "]"
+                    )
+                    for song in data.get("songs") or []:
+                        album = song.get("album") or {}
+                        if album.get("id"):
+                            album_ids[album["id"]] += 1
+                except Exception:
+                    pass
+        if not hit and not existing_ids:
+            unresolved.append(name[:-3])
+            continue
+        album_id = album_ids.most_common(1)[0][0] if album_ids else None
+        if album_id:
+            url = _album_url(album_id)
+            if url not in updated:
+                updated = re.sub(
+                    r"^(- 资料：.*)$",
+                    lambda m: f"{m.group(1)} · [网易云音乐]({url})",
+                    updated, count=1, flags=re.M,
+                )
+            if "outchain/player" not in updated:
+                src = f"https://music.163.com/outchain/player?type=1&id={album_id}&auto=0&height=430"
+                extra = ""
+                if url not in updated:  # 无「资料」行的老条目, 把专辑链接放进播放器块
+                    extra = f'<p><a href="{url}">在网易云打开专辑</a></p>\n'
+                player = (
+                    '<details class="player">\n'
+                    f"<summary>▶ 网易云播放器 · {fm.get('title','')}</summary>\n"
+                    f"{extra}"
+                    f'<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" '
+                    f'width="100%" height="430" src="{src}"></iframe>\n'
+                    "</details>"
+                )
+                if "\n<!-- gencover:begin -->" in updated:
+                    updated = updated.replace(
+                        "\n<!-- gencover:begin -->", f"\n{player}\n\n<!-- gencover:begin -->", 1
+                    )
+                else:
+                    updated = updated.rstrip() + "\n\n" + player + "\n"
+        if updated != text:
+            changed += 1
+            if not dry_run:
+                open(path, "w", encoding="utf-8").write(updated)
+        time.sleep(2.0)  # 网易云搜索接口限流很紧(406), 主动降速
+    return changed, unresolved
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--playlist", default="28868179")
@@ -435,11 +688,33 @@ def main(argv=None) -> int:
     parser.add_argument("--refresh", action="store_true", help="忽略歌单缓存")
     parser.add_argument("--limit", type=int, default=0, help="只处理前 N 张新专辑")
     parser.add_argument("--only", default="", help="逗号分隔的专辑名, 只处理这些")
+    parser.add_argument(
+        "--refresh-links", action="store_true",
+        help="回填既有条目: 曲目加网易云单曲链接 + 播放器 + 专辑链接(不重建条目)",
+    )
+    parser.add_argument(
+        "--resolve-missing", action="store_true",
+        help="给没有网易云链接的条目按曲名+艺人反查单曲, 补链接/播放器",
+    )
     args = parser.parse_args(argv)
 
     proxy = _proxy()
     data = load_playlist(args.playlist, refresh=args.refresh)
     albums, orphans = albumize(data["songs"])
+
+    if args.refresh_links:
+        changed, missing = refresh_links(albums, dry_run=args.dry_run)
+        print(f"refresh-links: changed={changed} not_found={len(missing)}")
+        for name in missing[:10]:
+            print("  NOT FOUND", name)
+        return 0
+
+    if args.resolve_missing:
+        changed, unresolved = resolve_missing(dry_run=args.dry_run, songs=data["songs"])
+        print(f"resolve-missing: changed={changed} unresolved={len(unresolved)}")
+        for name in unresolved:
+            print("  UNRESOLVED", name)
+        return 0
     # 按 stem 和 frontmatter title 双查重: 既有条目的文件名有 60 字截断,
     # 只比 stem 会给长名专辑造出重复条目(实测 Interstellar / Hateful Eight)
     existing = {

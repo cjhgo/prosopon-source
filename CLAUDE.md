@@ -123,6 +123,7 @@ source_id / source_url
 ```
 
 - **批量来路（音乐）**：`scripts/import_netease.py` 读网易云歌单，按专辑聚合生成条目。NetEase 出骨架（专辑/艺人/年/封面/我喜欢的曲目），NeoDB 只补简介、genres、评分、豆瓣链接；**匹配不过闸就回落 NetEase（`source: netease`），不伪造简介与评分**。匹配闸门 = 标题分层（精确/去括号基名）+ 艺人校验 + 年份复核——NeoDB 的 `alt_titles` 不可信，只认 show 标题。
+- **正文（音乐条目）固定结构**：`cover block` → `## 曲目`（每条 = `[曲名](music.163.com/#/song?id=…) — mm:ss`，只列我喜欢的那几首）→ `<details class="player">` 整专 outchain iframe（`type=1&auto=0`，默认折叠）→ `gencover` 简介块（`资料` 行带网易云专辑链接）。回填命令：`--refresh-links`（按歌单缓存重写曲目/播放器）、`--resolve-missing`（给非歌单条目按曲名+艺人反查）。
 
 - **tags 是认知/审美策展字段**：目前是 32 个受控 facet（中国/历史/微观史/犯罪/黑色幽默/OST/器乐/华语/…），不再使用 NeoDB 原始标签直接生成 tag 页。
 - `raw_tags` 保留原始数据，供以后人工筛选；不参与 tag 页。
