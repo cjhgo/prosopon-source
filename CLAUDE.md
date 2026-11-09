@@ -126,7 +126,7 @@ source_id / source_url
 - **同名多版本合并**：`真夜中のドア` 的多个版本、`明天会更好` 原版/Live 都放在**同一个 md** 的 `## 版本` 段；合并口径是"同一作品"（去尾部括号后标题相同），同名但不同作品用 `标题（艺人）` 消歧。
 - **正文（音乐条目）固定结构**：`cover block` → `## 版本`（播放器 UI）→ `## 专辑`（简介 + 专辑字段 + 资料链接）。
   - `## 版本` 是 `<div class="ncm-player">`（样式在 engine `custom.scss`）：播放钮链专辑页，每行 `序号 / 版本名 + 艺人·专辑 / 时长` 链单曲页。**是外观，不是内嵌播放**——网易云 outchain iframe 在第三方域报「资源加载失败」（`player/url` 对 `fee=1` 返回 `code:-110`），mp3 直链也已 404。
-- **迁移工具**：`scripts/migrate_music_to_songs.py` 把专辑级条目转成歌曲级（从既有专辑条目提取简介/评分/封面，按标题聚合版本）。`scripts/import_netease.py` 目前仍是专辑级导入，需加 `--legacy-album-model` 才运行，避免在歌曲级仓库里重新造出专辑条目。
+- **脚本分工**：`scripts/import_netease.py` 是**唯一写入口**（歌单 → 歌曲级条目：聚合版本、只为有新版本的专辑取 NeoDB 元数据/封面、把新版本增量并入既有 md）；`scripts/migrate_music_to_songs.py` 是**历史迁移工具**（旧专辑级库 → 歌曲级，只在旧库上跑）。两者共用 `scripts/music_model.py` 的渲染/合并/命名规则。
 
 - **tags 是认知/审美策展字段**：目前是 32 个受控 facet（中国/历史/微观史/犯罪/黑色幽默/OST/器乐/华语/…），不再使用 NeoDB 原始标签直接生成 tag 页。
 - `raw_tags` 保留原始数据，供以后人工筛选；不参与 tag 页。

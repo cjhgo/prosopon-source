@@ -8,12 +8,12 @@ scripts/preview.sh [端口]        # 本地预览(默认 8080,热重载),改 md 
 scripts/deploy.sh  [子域名]      # 构建 + 上线主站 + MOUSEION 子域(默认 prosopon/mouseion.junhangc.cn)
 scripts/gencover.sh             # 单篇书影音:专用 frontmatter + 选封面 + 元数据/背景(不调用 genfront)
 python3 scripts/import_netease.py --playlist <id> [--dry-run] [--limit N] [--only "A,B"]
-                                # 网易云歌单 → 专辑级 mouseion/music 条目(批量;NeoDB 补全, 匹配不过闸回落 NetEase)
-                                # --refresh-links: 回填曲目单曲链接 + 整专播放器 + 专辑链接
-                                # --resolve-missing: 非歌单老条目按曲名+艺人反查补链接
-                                # 注意: 仓库已迁到歌曲级模型, 专辑级导入需 --legacy-album-model
+                                # 网易云歌单 → 歌曲级 mouseion/music 条目(唯一写入口)
+                                # 同名多版本合并; 新版本增量并入既有 md(song_id 去重)
+                                # NeoDB 只补专题简介/评分; 匹配不过闸回落 NetEase
 python3 scripts/migrate_music_to_songs.py [--dry-run]
-                                # 专辑级条目 → 歌曲级(按标题聚合版本; 专辑降为字段)
+                                # 历史迁移: 旧「专辑级」库 → 歌曲级(只在旧库上跑)
+scripts/music_model.py          # 上述两者的共用模型: 渲染/版本合并/文件名规则
 ```
 
 ## 依赖与约定
