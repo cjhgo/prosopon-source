@@ -86,10 +86,21 @@ def _get_json(url: str, referer: str = NETEASE_REFERER, proxy: str = "", timeout
 
 
 def load_playlist(playlist_id: str, refresh: bool = False) -> dict:
+    """拉歌单; 有缓存时先比 updateTime, 没变化直接用缓存(省 354 首的批量请求)。"""
     os.makedirs(CACHE_DIR, exist_ok=True)
     cache = os.path.join(CACHE_DIR, f"netease-{playlist_id}.json")
     if os.path.exists(cache) and not refresh:
-        return json.load(open(cache, encoding="utf-8"))
+        data = json.load(open(cache, encoding="utf-8"))
+        try:
+            detail = _get_json(
+                f"https://music.163.com/api/v6/playlist/detail?id={playlist_id}&n=1&s=0"
+            )
+            remote = str((detail.get("playlist") or {}).get("updateTime") or "")
+            if remote and remote == str(data["playlist"].get("updateTime")):
+                return data
+            print(f"playlist updated (remote updateTime={remote}) — refetching tracks")
+        except Exception:
+            return data  # 网络不可用: 退回缓存
 
     detail = _get_json(
         f"https://music.163.com/api/v6/playlist/detail?id={playlist_id}&n=1000&s=0"
