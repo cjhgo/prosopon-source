@@ -55,23 +55,32 @@ v5 起支持 Obsidian Bases。`.base` 是 YAML 查询/视图配置，**数据仍
 ```yaml
 filters:
   and:
-    - file.inFolder("观影")
+    - file.inFolder("mouseion/books")
+    - file.hasProperty("cover")
 views:
+  - type: cards
+    name: Cards
   - type: table
-    name: 全部
-    order: [title, year, director, rating]
+    name: All
+  - type: gallery
+    name: Gallery
+  - type: board
+    name: Board
+  - type: list
+    name: List
 ```
 
-- 一个条目 = 一篇 note（如 `观影/花样年华.md`，frontmatter 写 `director/year/rating/status`）。
-- 视图：`table` / `list` / `cards` / `gallery` / `board`。
-- `.base` 放内容根或 folder 内；产出 URL 目前带 `.base`（如 `/观影.base`），要干净 URL 可用 md 内 ` ```base ` 代码块嵌入。
+- 一个条目 = 一篇 note（如 `mouseion/film/花样年华.md`，frontmatter 写 `medium/creator/year/...`）。
+- 视图：`cards` / `table` / `gallery` / `board` / `list`；`/mouseion/*` 页面**默认 Cards**。
+- `/mouseion/` 综合页用 `mouseion` custom view（书架 / 胶片夹 / 密铺封面墙）；`/mouseion/{books,film,music}/` 用嵌入 `.base` 的原生视图。
+- 独立子域 `mouseion.junhangc.cn` 是同一内容的第二载体：主站 build 产 `static/mouseion.json`，独立站消费；条目点击回主站 note 页。
 - 内容分类仍只认 folder；Bases 是**读 frontmatter 的派生视图**，不是新分类轴。
 
 ## 第二层(Quartz 规则 · 写时的最小集)
 
 - **文本链接 = wikilink `[[标题]]`**:只写文件名(不带路径),Quartz 按名全局解析,**跨 folder、挪 folder 都不断**。本地普通预览显字面(可读不可点);用 Obsidian 可点。**不模糊**——错字/异大小写会静默死链,需要别名就在目标 frontmatter 加 `aliases: [...]`。
 - **图片 = 标准相对路径 `![](相对路径)`**(cweijan 粘图即此,顺其自然)。本地普通预览直接认;上线由 engine 的自定义 transformer `FlattenLocalAssets` 在构建时改写成扁平 `/assets/<hash>`(解决 Quartz flat-url 下标准相对图会碎的坑,并与 slug/OSS 解耦)。**作者不用管**——写标准相对即可,两端都完整。别手写 `![[图]]`(本地预览器不认)。
-- **folder = 大类物理分组**(定稿:`生活/工作/读书/新知/随笔`):给面包屑用。领域/主题**不靠 folder**,靠 frontmatter。
+- **folder = 大类物理分组**(定稿:`生活/工作/读书/新知/随笔` + `mouseion/{books,film,music}`):给面包屑用。领域/主题**不靠 folder**,靠 frontmatter。
 - **assets 不手动搬**:图放哪个 folder 都行,`FlattenLocalAssets` + `AssetManifest` 构建时统一扁平化到 `/assets/<hash>`、出 `assets-manifest.json`;生产图走 OSS。
 
 ### frontmatter schema(双用:花园展示 + 小红书 SoT)
@@ -92,6 +101,32 @@ source:       # 可选。摘录/外链的出处
 **内容分类只用 folder,不用 `type` 字段**:长文放主题 folder(历史/思考/…),短内容统一放 `随笔/`。
 「长文 vs 短文」信息量太低,不配一个字段——folder 位置即分类。
 
+### 书影音（MOUSEION）专用 frontmatter
+
+`content/mouseion/` 的条目由 `scripts/gencover.sh` 生成/补全，**不使用 genfront 的通用骨架**：
+
+```yaml
+title:       # 条目标题（专辑/电影/书）
+medium:      # book | film | music
+added:       # YYYY-MM-DD
+cover:       # 从 content 根算相对路径，构建时扁平化到 OSS
+cover_source:  # neodb:<id> | generated
+cover_status:  # manual | auto | fallback
+creator:     # 作者/导演/艺人
+year:
+description: # 短摘要（正文 gencover 区块有完整背景）
+raw_tags: [] # **原始标签**（NeoDB 等），保留，不驱动 tag 页
+tags: []     # **人工策展标签**；gencover 只写一个粗分类(书/电影/音乐)
+source:      # neodb 等
+source_id / source_url
+# 类型特有：director/cast/genres/release_date/country；author/publisher/isbn/pages；artist/label/track_count
+```
+
+- **tags 是认知/审美策展字段**：目前是 32 个受控 facet（中国/历史/微观史/犯罪/黑色幽默/OST/器乐/华语/…），不再使用 NeoDB 原始标签直接生成 tag 页。
+- `raw_tags` 保留原始数据，供以后人工筛选；不参与 tag 页。
+- 正文封面由 `gencover` 生成并 URL-encode；不要手写带空格的 `![](image/Way Back...)`（Markdown 不会识别为图片）。
+- 独立站 `mouseion.junhangc.cn` 只读 `static/mouseion.json` 投影；内容改动仍以主站构建为准。
+
 ---
 
 ## 第三层(agent reviewer 职责 · quartz 感知 + 内容感知)
@@ -102,7 +137,7 @@ source:       # 可选。摘录/外链的出处
    - `title`:取一级标题或首句凝练;确保**全局唯一**(撞名则加限定词,否则 wikilink 会歧义)。
    - **folder**:判断放哪——长文归主题大类(历史/思考/…),短内容归 `随笔/`。不写 type 字段。
    - `date`:正文里有写(如「crystal 自 2026-08-24」)就抽出来补上;没有就**留空**(宁可不显示,不伪造)。
-   - `tags`:从正文主题抽 2–4 个;`domain`:映射到 oikos 域(可留空)。
+   - `tags`:从正文主题抽 2–4 个;`domain`:映射到 oikos 域(可留空)。**书影音条目例外**:`raw_tags` 保留源标签，`tags` 只用一个粗分类，facet 由人工策展。
    - `description`:一句话概括(≤40 字),供卡片/小红书 caption。
 2. **cover(关键·路径规整)**:取**正文第一张图**作 cover;把它的相对路径转成**从 content 根的路径**(= 该 md 所在 folder 前缀 + 正文相对路径)。例:`生活/十月的光.md` 正文 `![](image/十月的光/x.png)` → `cover: 生活/image/十月的光/x.png`。CardList 按根解析 cover,故必须从根写。
 3. **图片规整(仅当发现 `![[...]]` 图)**:把 wikilink 图改成标准相对 `![](...)`(保本地预览)。正常 cweijan 粘的无需动。
