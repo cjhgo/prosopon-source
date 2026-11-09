@@ -117,10 +117,12 @@ year:
 description: # 短摘要（正文 gencover 区块有完整背景）
 raw_tags: [] # **原始标签**（NeoDB 等），保留，不驱动 tag 页
 tags: []     # **人工策展标签**；gencover 只写一个粗分类(书/电影/音乐)
-source:      # neodb 等
+source:      # neodb | netease
 source_id / source_url
 # 类型特有：director/cast/genres/release_date/country；author/publisher/isbn/pages；artist/label/track_count
 ```
+
+- **批量来路（音乐）**：`scripts/import_netease.py` 读网易云歌单，按专辑聚合生成条目。NetEase 出骨架（专辑/艺人/年/封面/我喜欢的曲目），NeoDB 只补简介、genres、评分、豆瓣链接；**匹配不过闸就回落 NetEase（`source: netease`），不伪造简介与评分**。匹配闸门 = 标题分层（精确/去括号基名）+ 艺人校验 + 年份复核——NeoDB 的 `alt_titles` 不可信，只认 show 标题。
 
 - **tags 是认知/审美策展字段**：目前是 32 个受控 facet（中国/历史/微观史/犯罪/黑色幽默/OST/器乐/华语/…），不再使用 NeoDB 原始标签直接生成 tag 页。
 - `raw_tags` 保留原始数据，供以后人工筛选；不参与 tag 页。

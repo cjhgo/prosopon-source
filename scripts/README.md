@@ -7,6 +7,8 @@ scripts/genfront.sh <file.md> [...] # 补 frontmatter 骨架(title/date/tags/des
 scripts/preview.sh [端口]        # 本地预览(默认 8080,热重载),改 md 自动刷新
 scripts/deploy.sh  [子域名]      # 构建 + 上线主站 + MOUSEION 子域(默认 prosopon/mouseion.junhangc.cn)
 scripts/gencover.sh             # 单篇书影音:专用 frontmatter + 选封面 + 元数据/背景(不调用 genfront)
+python3 scripts/import_netease.py --playlist <id> [--dry-run] [--limit N] [--only "A,B"]
+                                # 网易云歌单 → 专辑级 mouseion/music 条目(批量;NeoDB 补全, 匹配不过闸回落 NetEase)
 ```
 
 ## 依赖与约定

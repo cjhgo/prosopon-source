@@ -425,13 +425,14 @@ def _external_links(detail: dict) -> dict:
     return links
 
 
-def build_meta(cand: dict, typ: str, proxy: str = "") -> dict:
-    detail = {}
-    if cand.get("source") == "neodb":
-        try:
-            detail = sources.neodb_detail(cand, typ, proxy=proxy)
-        except Exception:
-            detail = {}
+def build_meta(cand: dict, typ: str, proxy: str = "", detail: dict | None = None) -> dict:
+    if detail is None:
+        detail = {}
+        if cand.get("source") == "neodb":
+            try:
+                detail = sources.neodb_detail(cand, typ, proxy=proxy)
+            except Exception:
+                detail = {}
     credits = detail.get("credits") or []
 
     def names(role: str) -> list[str]:
@@ -530,10 +531,12 @@ def upsert_cover_image(body: str, rel_path: str) -> str:
     return (block + "\n\n" + body) if body else block + "\n"
 
 
-def render_background(typ: str, meta: dict) -> str:
+def render_background(typ: str, meta: dict, source_label: str = "NeoDB") -> str:
     heading = {"film": "背景", "book": "内容简介", "music": "专辑简介"}.get(typ, "背景")
-    lines = ["<!-- gencover:begin -->", f"## {heading}", ""]
     desc = str(meta.get("description") or "").strip()
+    if not desc and typ == "music":
+        heading = "专辑信息"  # 无简介时不留一个空标题
+    lines = ["<!-- gencover:begin -->", f"## {heading}", ""]
     if desc:
         lines += [desc[:4000], ""]
     bullets = []
@@ -574,7 +577,7 @@ def render_background(typ: str, meta: dict) -> str:
         bullets.append(f"- 评分：{meta['neodb_rating']}（NeoDB）")
     links = []
     if meta.get("source_url"):
-        links.append(f"[NeoDB]({meta['source_url']})")
+        links.append(f"[{source_label}]({meta['source_url']})")
     for key, label in (("douban", "Douban"), ("imdb", "IMDb"), ("tmdb", "TMDB"), ("openlibrary", "Open Library")):
         if meta.get(key):
             links.append(f"[{label}]({meta[key]})")
