@@ -578,6 +578,8 @@ def render_background(typ: str, meta: dict, source_label: str = "NeoDB") -> str:
     links = []
     if meta.get("source_url"):
         links.append(f"[{source_label}]({meta['source_url']})")
+    if meta.get("netease_url") and meta["netease_url"] != meta.get("source_url"):
+        links.append(f"[网易云音乐]({meta['netease_url']})")
     for key, label in (("douban", "Douban"), ("imdb", "IMDb"), ("tmdb", "TMDB"), ("openlibrary", "Open Library")):
         if meta.get(key):
             links.append(f"[{label}]({meta[key]})")
