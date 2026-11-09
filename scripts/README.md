@@ -6,7 +6,7 @@
 scripts/genfront.sh <file.md> [...] # 补 frontmatter 骨架(title/date/tags/description 占位,幂等)
 scripts/preview.sh [端口]        # 本地预览(默认 8080,热重载),改 md 自动刷新
 scripts/deploy.sh  [子域名]      # 构建 + 上线(默认 prosopon.junhangc.cn)
-scripts/covers/coverfetch.py     # 书影音封面抓取(独立 authoring-time 管线,见 covers/README.md)
+scripts/gencover.sh             # 单篇书影音:专用 frontmatter + 选封面 + 元数据/背景(不调用 genfront)
 ```
 
 ## 依赖与约定

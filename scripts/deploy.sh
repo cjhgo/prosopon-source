@@ -3,9 +3,10 @@
 # 用法: scripts/deploy.sh [子域名]
 #   默认子域名 prosopon.junhangc.cn;可传参或设 PROSOPON_DOMAIN。
 # 流程:
-#   1. ASSET_BASE_URL=OSS 域名 → Quartz 构建(HTML 里图 URL 指向 OSS)
-#   2. ossutil sync public/assets/ → OSS 桶(增量,大文件走这)
-#   3. 删 public/assets/(不进 ECS 包)→ vps deploy-dir 传 HTML(小、快)
+#   1. ASSET_BASE_URL=OSS 域名 → Quartz 构建 + mouseion.json feed
+#   2. .quartz-cache/assets/ → OSS 桶(内容 hash 增量)
+#   3. mouseion-site/build.py 生成独立全屏站 → vps deploy-dir mouseion.junhangc.cn
+#   4. 删 public/assets/ → vps deploy-dir HTML 到主站
 set -euo pipefail
 
 SELF="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"              # prosopon-source
@@ -15,6 +16,9 @@ CONTENT="$SELF/content"
 PUBLIC="$ENGINE/quartz/public"
 DOMAIN="${1:-${PROSOPON_DOMAIN:-prosopon.junhangc.cn}}"   # 正式站(试运行曾用 quartz.junhangc.cn)
 ASSET_BASE="${ASSET_BASE_URL:-https://assets.junhangc.cn}"   # 图床域名(OSS 自定义域名)
+MOUSEION_DOMAIN="${MOUSEION_DOMAIN:-mouseion.junhangc.cn}"
+MOUSEION_SITE="$ENGINE/mouseion-site"
+MOUSEION_DIST="$ENGINE/.quartz-cache/mouseion-dist"
 
 if [ -d "$HOME/.nvm/versions/node" ]; then
   LATEST="$(ls -d "$HOME"/.nvm/versions/node/v* 2>/dev/null | sort -V | tail -1)"
@@ -24,21 +28,32 @@ fi
 [ -d "$ENGINE/quartz" ] || { echo "✗ 找不到 engine: $ENGINE/quartz"; exit 1; }
 [ -n "$ALIYUN_OPS" ] && [ -x "$ALIYUN_OPS/bin/vps" ] || { echo "✗ 找不到 aliyun-ops(设 ALIYUN_OPS)"; exit 1; }
 
-echo "▶ [1/3] 构建(图 URL → $ASSET_BASE)"
+echo "▶ [1/4] 构建(图 URL → $ASSET_BASE)"
 cd "$ENGINE/quartz"
-rm -rf public .quartz-cache
+# 保留 .quartz-cache:OG/字体/已扁平图资产缓存,避免每次全量重生成。
+rm -rf public
+ASSET_CACHE="$ENGINE/quartz/.quartz-cache/assets"
 QUARTZ_PROD=1 ASSET_BASE_URL="$ASSET_BASE" npx quartz build -d "$CONTENT"
-NIMG=$(find "$PUBLIC/assets" -type f 2>/dev/null | wc -l | tr -d ' ')
-echo "  ✓ 构建完成($NIMG 张图待传 OSS)"
+NIMG=$(find "$ASSET_CACHE" -type f 2>/dev/null | wc -l | tr -d ' ')
+echo "  ✓ 构建完成(缓存 assets: ${NIMG}; OSS 增量同步)"
 
-echo "▶ [2/3] 图片 → OSS($ASSET_BASE)"
-if [ -d "$PUBLIC/assets" ] && [ "$NIMG" -gt 0 ]; then
-  "$ALIYUN_OPS/bin/oss" sync "$PUBLIC/assets" assets/
+echo "▶ [2/4] 图片 → OSS($ASSET_BASE)"
+if [ -d "$ASSET_CACHE" ] && [ "$NIMG" -gt 0 ]; then
+  "$ALIYUN_OPS/bin/oss" sync "$ASSET_CACHE" assets/
 else
   echo "  (无图,跳过)"
 fi
 
-echo "▶ [3/3] HTML → ECS(https://$DOMAIN)"
+echo "▶ [3/4] MOUSEION → ECS(https://$MOUSEION_DOMAIN)"
+if [ -f "$PUBLIC/static/mouseion.json" ] && [ -f "$MOUSEION_SITE/build.py" ]; then
+  python3 "$MOUSEION_SITE/build.py" "$PUBLIC/static/mouseion.json" "$MOUSEION_DIST"
+  "$ALIYUN_OPS/bin/vps" deploy-dir "$MOUSEION_DIST" --domain "$MOUSEION_DOMAIN"
+  "$ALIYUN_OPS/bin/vps" use-cert --domain "$MOUSEION_DOMAIN" || echo "  (MOUSEION HTTPS 未切;检查泛域名证书)"
+else
+  echo "  (缺 mouseion feed/site,跳过)"
+fi
+
+echo "▶ [4/4] HTML → ECS(https://$DOMAIN)"
 rm -rf "$PUBLIC/assets"   # 图已在 OSS,不进 ECS 包(包只剩 HTML,小)
 cd "$ALIYUN_OPS"
 bin/vps deploy-dir "$PUBLIC" --domain "$DOMAIN"

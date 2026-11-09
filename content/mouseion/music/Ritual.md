@@ -1,0 +1,43 @@
+---
+title: Ritual
+medium: music
+creator: Adam Hurst
+cover: mouseion/music/image/Ritual/cover.webp
+cover_source: "neodb:6Y3CYg8O4ShQztrVWtJFud"
+cover_status: auto
+year: 2009
+description: 亚当·郝斯特，是一位获奖无数的大提琴家和作曲家，其深受中东、印度和欧洲传统音乐影响，他的独奏浪漫空灵、静怡忧伤，富有诗意并充满激情，旋律厚重能够震撼聆听者的心灵。
+source: neodb
+source_id: 6Y3CYg8O4ShQztrVWtJFud
+source_url: "https://neodb.social/album/6Y3CYg8O4ShQztrVWtJFud"
+genres: ["classical"]
+release_date: 2009-04-07
+artist: ["Adam Hurst"]
+track_count: 118
+neodb_rating: 8.5
+douban: "https://music.douban.com/subject/3903561/"
+added: 2026-11-09
+raw_tags: ["classical", "instrumental", "neo classical", "大提琴", "每周一砖", "纯音乐"]
+tags: ["音乐", "器乐"]
+---
+<!-- gencover:cover:begin -->
+![cover](image/Ritual/cover.webp)
+<!-- gencover:cover:end -->
+
+## 曲目
+
+- Midnight Waltz — 04:31
+
+<!-- gencover:begin -->
+## 专辑简介
+
+亚当·郝斯特，是一位获奖无数的大提琴家和作曲家，其深受中东、印度和欧洲传统音乐影响，他的独奏浪漫空灵、静怡忧伤，富有诗意并充满激情，旋律厚重能够震撼聆听者的心灵。
+
+- 艺人：Adam Hurst
+- 发行：2009-04-07
+- 类型：classical
+- 曲目：118
+- 评分：8.5（NeoDB）
+- 资料：[NeoDB](https://neodb.social/album/6Y3CYg8O4ShQztrVWtJFud) · [Douban](https://music.douban.com/subject/3903561/)
+
+<!-- gencover:end -->
