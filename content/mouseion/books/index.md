@@ -10,6 +10,18 @@ filters:
     - file.hasProperty("cover")
 
 views:
+  - type: cards
+    name: Cards
+    image: note.cover
+    cardSize: 220
+    order:
+      - title
+      - creator
+      - year
+    sort:
+      - property: year
+        direction: DESC
+
   - type: table
     name: All
     order:
@@ -24,18 +36,6 @@ views:
     columnSize:
       note.title: 320
       note.year: 80
-
-  - type: cards
-    name: Cards
-    image: note.cover
-    cardSize: 220
-    order:
-      - title
-      - creator
-      - year
-    sort:
-      - property: year
-        direction: DESC
 
   - type: gallery
     name: Gallery
