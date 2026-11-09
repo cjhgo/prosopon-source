@@ -29,10 +29,7 @@ tags: ["音乐"]
 
 - [因为爱情 (电影《将爱情进行到底》主题曲)](https://music.163.com/#/song?id=64317) — 03:38
 
-<details class="player">
-<summary>▶ 网易云播放器 · Stranger Under My Skin</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=6355&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=6355)
 
 <!-- gencover:begin -->
 ## 专辑简介

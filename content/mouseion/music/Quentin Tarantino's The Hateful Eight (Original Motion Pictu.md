@@ -29,10 +29,7 @@ tags: ["音乐", "OST", "西部"]
 
 - [Jim Jones At Botany Bay (From "The Hateful Eight" Soundtrack)](https://music.163.com/#/song?id=39449220) — 04:11
 
-<details class="player">
-<summary>▶ 网易云播放器 · Quentin Tarantino's The Hateful Eight (Original Motion Picture Soundtrack)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=3426919&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=3426919)
 
 <!-- gencover:begin -->
 ## 专辑简介

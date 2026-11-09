@@ -27,10 +27,7 @@ tags: ["音乐", "民谣", "现场"]
 
 - [Three Rules of Discipline and the Eight Rules of Attention](https://music.163.com/#/song?id=552175255) — 02:26
 
-<details class="player">
-<summary>▶ 网易云播放器 · Together in Concert (Remastered 1999)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=38319325&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=38319325)
 
 <!-- gencover:begin -->
 ## 专辑简介

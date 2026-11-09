@@ -29,10 +29,7 @@ tags: ["音乐"]
 - [诱惑的街 (Live)](https://music.163.com/#/song?id=108180) — 05:23
 - [当爱已成往事 (Live)](https://music.163.com/#/song?id=108174) — 04:52
 
-<details class="player">
-<summary>▶ 网易云播放器 · 李宗盛 理性与感性作品音乐会 LIVE</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=10749&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=10749)
 
 <!-- gencover:begin -->
 ## 专辑信息

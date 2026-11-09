@@ -24,10 +24,7 @@ tags: ["音乐"]
 
 - [You Never Can Tell (1964 Single Version)](https://music.163.com/#/song?id=22078173) — 02:43
 
-<details class="player">
-<summary>▶ 网易云播放器 · 20th Century Masters: The Best Of Chuck Berry - The Millennium Collection</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2030771&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2030771)
 
 <!-- gencover:begin -->
 ## 专辑信息

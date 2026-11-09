@@ -28,10 +28,7 @@ tags: ["音乐"]
 
 - [Usignolo (Nightingale)](https://music.163.com/#/song?id=28437004) — 05:14
 
-<details class="player">
-<summary>▶ 网易云播放器 · Inspirato</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2791979&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2791979)
 
 <!-- gencover:begin -->
 ## 专辑简介

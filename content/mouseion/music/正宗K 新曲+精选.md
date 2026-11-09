@@ -29,10 +29,7 @@ tags: ["音乐"]
 
 - [无赖 (电影《龙咁威II之皇母娘娘呢？》主题曲)](https://music.163.com/#/song?id=191171) — 04:03
 
-<details class="player">
-<summary>▶ 网易云播放器 · 正宗K 新曲+精选</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=19313&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=19313)
 
 <!-- gencover:begin -->
 ## 专辑简介

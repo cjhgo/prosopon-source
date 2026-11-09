@@ -26,10 +26,7 @@ tags: ["音乐"]
 
 - [You! Me! Dancing!](https://music.163.com/#/song?id=16624395) — 06:14
 
-<details class="player">
-<summary>▶ 网易云播放器 · Sticking Fingers Into Sockets</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1534013&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=1534013)
 
 <!-- gencover:begin -->
 ## 专辑简介

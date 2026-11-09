@@ -28,10 +28,7 @@ tags: ["音乐"]
 - [Way Back Into Love (电影《K歌情人》插曲)](https://music.163.com/#/song?id=5046372) — 04:38
 - [Way Back Into Love (Demo)](https://music.163.com/#/song?id=5046367) — 04:12
 
-<details class="player">
-<summary>▶ 网易云播放器 · Music and Lyrics (Music from the Motion Picture)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=500930&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=500930)
 
 <!-- gencover:begin -->
 ## 专辑简介

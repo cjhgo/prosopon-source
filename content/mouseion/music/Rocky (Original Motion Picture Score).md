@@ -29,10 +29,7 @@ tags: ["音乐"]
 - [Gonna Fly Now (Theme from Rocky)](https://music.163.com/#/song?id=2285204) — 02:49
 - [Going the Distance](https://music.163.com/#/song?id=2285212) — 02:39
 
-<details class="player">
-<summary>▶ 网易云播放器 · Rocky (Original Motion Picture Score)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=230467&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=230467)
 
 <!-- gencover:begin -->
 ## 专辑简介

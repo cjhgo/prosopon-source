@@ -25,10 +25,7 @@ tags: ["音乐"]
 
 - [仙乐处处飘](https://music.163.com/#/song?id=863553296) — 02:37
 
-<details class="player">
-<summary>▶ 网易云播放器 · Recall A Little Bit</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=71706942&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=71706942)
 
 <!-- gencover:begin -->
 ## 专辑简介

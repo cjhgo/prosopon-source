@@ -24,10 +24,7 @@ tags: ["音乐"]
 
 - [战争](https://music.163.com/#/song?id=65903) — 04:10
 
-<details class="player">
-<summary>▶ 网易云播放器 · The Best Collection</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=6458&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=6458)
 
 <!-- gencover:begin -->
 ## 专辑信息

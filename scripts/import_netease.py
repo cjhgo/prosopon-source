@@ -308,26 +308,16 @@ def _track_line(song: dict) -> str:
     return f"- {name} — {_fmt_duration(song['duration'])}"
 
 
+def _play_link(album_id) -> str:
+    """内嵌播放器已不可用(网易云 outchain 在 iframe 里报「资源加载失败」,
+    直链 mp3 也 302 到 /404), 退化为一个显式播放入口。"""
+    return f"> [▶ 在网易云播放整张专辑]({_album_url(album_id)})"
+
+
 def _tracks_section(album: dict) -> str:
-    """我喜欢的曲目(每条链到网易云单曲页) + 整专折叠播放器。"""
+    """我喜欢的曲目(每条链到网易云单曲页) + 整专播放入口。"""
     lines = "\n".join(_track_line(s) for s in album["songs"])
-    return f"## 曲目\n\n{lines}\n\n{_player_block(album)}"
-
-
-def _player_block(album: dict) -> str:
-    """整专 outchain 播放器: 默认折叠, 点开可播。"""
-    album_id = album["id"]
-    src = (
-        "https://music.163.com/outchain/player"
-        f"?type=1&id={album_id}&auto=0&height=430"
-    )
-    return (
-        "<details class=\"player\">\n"
-        f"<summary>▶ 网易云播放器 · {album['name']}</summary>\n"
-        f"<iframe frameborder=\"no\" border=\"0\" marginwidth=\"0\" marginheight=\"0\" "
-        f"width=\"100%\" height=\"430\" src=\"{src}\"></iframe>\n"
-        "</details>"
-    )
+    return f"## 曲目\n\n{lines}\n\n{_play_link(album['id'])}"
 
 
 def _safe_stem(title: str) -> str:
@@ -577,7 +567,7 @@ def resolve_missing(dry_run: bool = False, songs: list[dict] | None = None) -> t
             continue
         path = os.path.join(MUSIC_DIR, name)
         text = open(path, encoding="utf-8").read()
-        if "outchain/player" in text:
+        if "在网易云播放整张专辑" in text:
             continue
         fm, _, _ = nc.split_frontmatter(text)
         creator = (fm.get("creator") or "").split(" / ")[0]
@@ -654,25 +644,16 @@ def resolve_missing(dry_run: bool = False, songs: list[dict] | None = None) -> t
                     lambda m: f"{m.group(1)} · [网易云音乐]({url})",
                     updated, count=1, flags=re.M,
                 )
-            if "outchain/player" not in updated:
-                src = f"https://music.163.com/outchain/player?type=1&id={album_id}&auto=0&height=430"
-                extra = ""
-                if url not in updated:  # 无「资料」行的老条目, 把专辑链接放进播放器块
-                    extra = f'<p><a href="{url}">在网易云打开专辑</a></p>\n'
-                player = (
-                    '<details class="player">\n'
-                    f"<summary>▶ 网易云播放器 · {fm.get('title','')}</summary>\n"
-                    f"{extra}"
-                    f'<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" '
-                    f'width="100%" height="430" src="{src}"></iframe>\n'
-                    "</details>"
-                )
-                if "\n<!-- gencover:begin -->" in updated:
-                    updated = updated.replace(
-                        "\n<!-- gencover:begin -->", f"\n{player}\n\n<!-- gencover:begin -->", 1
+            link = _play_link(album_id)
+            if link not in updated:
+                if re.search(r"^## 曲目$", updated, re.M):
+                    updated = re.sub(
+                        r"(## 曲目\n\n(?:- .*\n)+)",
+                        lambda m: f"{m.group(1)}\n{link}\n",
+                        updated, count=1,
                     )
-                else:
-                    updated = updated.rstrip() + "\n\n" + player + "\n"
+                else:  # 没有曲目段的老条目: 追加到末尾
+                    updated = updated.rstrip() + "\n\n" + link + "\n"
         if updated != text:
             changed += 1
             if not dry_run:

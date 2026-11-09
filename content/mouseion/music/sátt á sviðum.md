@@ -27,10 +27,7 @@ tags: ["音乐"]
 
 - [Saturnus](https://music.163.com/#/song?id=26224538) — 02:56
 
-<details class="player">
-<summary>▶ 网易云播放器 · sátt á sviðum</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2422932&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2422932)
 
 <!-- gencover:begin -->
 ## 专辑简介

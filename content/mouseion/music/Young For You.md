@@ -29,10 +29,7 @@ tags: ["音乐"]
 
 - [Young For You](https://music.163.com/#/song?id=356034) — 03:39
 
-<details class="player">
-<summary>▶ 网易云播放器 · Young For You</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=35147&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=35147)
 
 <!-- gencover:begin -->
 ## 专辑简介

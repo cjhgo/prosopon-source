@@ -26,10 +26,7 @@ tags: ["音乐"]
 
 - [Chasing Stars](https://music.163.com/#/song?id=28841795) — 03:46
 
-<details class="player">
-<summary>▶ 网易云播放器 · The Secret of the Sea</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2903973&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2903973)
 
 <!-- gencover:begin -->
 ## 专辑简介

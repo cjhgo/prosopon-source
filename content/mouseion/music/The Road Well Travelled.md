@@ -17,7 +17,4 @@ tags: ["音乐", "民谣"]
 
 - [The Road Well Travelled](https://music.163.com/#/song?id=2123148992) — 05:38
 
-<details class="player">
-<summary>▶ 网易云播放器 · The Road Well Travelled</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=184896244&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=184896244)

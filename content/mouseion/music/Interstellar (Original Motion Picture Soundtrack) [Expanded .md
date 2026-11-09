@@ -29,10 +29,7 @@ tags: ["音乐", "OST", "器乐"]
 
 - [Cornfield Chase (电影《星际穿越》配乐)](https://music.163.com/#/song?id=29734857) — 02:07
 
-<details class="player">
-<summary>▶ 网易云播放器 · Interstellar (Original Motion Picture Soundtrack) [Expanded Edition]</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=3056517&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=3056517)
 
 <!-- gencover:begin -->
 ## 专辑简介

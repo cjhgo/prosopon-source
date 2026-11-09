@@ -28,10 +28,7 @@ tags: ["音乐"]
 
 - [Rain, Totoro Forest](https://music.163.com/#/song?id=853708) — 08:26
 
-<details class="player">
-<summary>▶ 网易云播放器 · Sound Travel</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=85066&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=85066)
 
 <!-- gencover:begin -->
 ## 专辑简介

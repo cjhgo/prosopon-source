@@ -24,10 +24,7 @@ tags: ["音乐"]
 
 - [孤单北半球 (live)](https://music.163.com/#/song?id=254260) — 04:23
 
-<details class="player">
-<summary>▶ 网易云播放器 · 爱的大游行 Live全纪录</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=25398&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=25398)
 
 <!-- gencover:begin -->
 ## 专辑信息

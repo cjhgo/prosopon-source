@@ -25,10 +25,7 @@ tags: ["音乐"]
 - [亡命之徒(Live)](https://music.163.com/#/song?id=394488) — 06:15
 - [爱的箴言+花心+寂寞难耐+喝酒(Live)](https://music.163.com/#/song?id=394628) — 11:42
 
-<details class="player">
-<summary>▶ 网易云播放器 · Live in Taipei 出发/终点站</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=39066&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=39066)
 
 <!-- gencover:begin -->
 ## 专辑信息

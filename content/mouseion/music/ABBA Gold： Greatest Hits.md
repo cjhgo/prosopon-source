@@ -29,10 +29,7 @@ tags: ["音乐"]
 
 - [Gimme! Gimme! Gimme! (A Man After Midnight)](https://music.163.com/#/song?id=3880252) — 04:49
 
-<details class="player">
-<summary>▶ 网易云播放器 · ABBA Gold: Greatest Hits</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=392576&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=392576)
 
 <!-- gencover:begin -->
 ## 专辑简介

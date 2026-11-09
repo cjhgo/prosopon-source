@@ -24,10 +24,7 @@ tags: ["音乐"]
 
 - [Bohemian Rhapsody / Radio Ga Ga (Live at Wembley Stadium, 13th July 1985)](https://music.163.com/#/song?id=1836407592) — 06:30
 
-<details class="player">
-<summary>▶ 网易云播放器 · Queen at Live Aid (Live at Wembley Stadium, 13th July 1985)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=125858719&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=125858719)
 
 <!-- gencover:begin -->
 ## 专辑信息

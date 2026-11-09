@@ -28,10 +28,7 @@ tags: ["音乐"]
 
 - [漠河舞厅](https://music.163.com/#/song?id=1430319727) — 05:34
 
-<details class="player">
-<summary>▶ 网易云播放器 · 1st.星球</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=90108348&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=90108348)
 
 <!-- gencover:begin -->
 ## 专辑简介

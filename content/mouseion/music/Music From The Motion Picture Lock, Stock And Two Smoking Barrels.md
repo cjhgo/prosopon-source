@@ -24,10 +24,7 @@ tags: ["音乐"]
 
 - [Zorba the Greek](https://music.163.com/#/song?id=5055335) — 02:56
 
-<details class="player">
-<summary>▶ 网易云播放器 · Music From The Motion Picture Lock, Stock And Two Smoking Barrels</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=501426&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=501426)
 
 <!-- gencover:begin -->
 ## 专辑信息

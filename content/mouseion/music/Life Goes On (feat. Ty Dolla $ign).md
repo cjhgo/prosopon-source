@@ -27,10 +27,7 @@ tags: ["音乐"]
 
 - [Life Goes On (feat. Ty Dolla $ign)](https://music.163.com/#/song?id=1893974352) — 02:42
 
-<details class="player">
-<summary>▶ 网易云播放器 · Life Goes On (feat. Ty Dolla $ign)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=135963971&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=135963971)
 
 <!-- gencover:begin -->
 ## 专辑简介

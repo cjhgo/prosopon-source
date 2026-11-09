@@ -24,10 +24,7 @@ tags: ["音乐", "OST", "器乐"]
 - [Mother](https://music.163.com/#/song?id=444324) — 02:12
 - [The Rain](https://music.163.com/#/song?id=444312) — 05:38
 
-<details class="player">
-<summary>▶ 网易云播放器 · Kikujiro (Original Motion Picture Soundtrack)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=43083&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=43083)
 
 <!-- gencover:begin -->
 ## 专辑简介

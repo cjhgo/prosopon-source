@@ -24,10 +24,7 @@ tags: ["音乐"]
 
 - [Living Life](https://music.163.com/#/song?id=28381563) — 02:33
 
-<details class="player">
-<summary>▶ 网易云播放器 · Before Sunrise, Before Sunset, Before Midnight (Bandes originales des films de Richard Linklater)</summary>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2785065&auto=0&height=430"></iframe>
-</details>
+> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2785065)
 
 <!-- gencover:begin -->
 ## 专辑信息
