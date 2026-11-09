@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Life Goes On (feat. Ty Dolla $ign) — 02:42
+- [Life Goes On (feat. Ty Dolla $ign)](https://music.163.com/#/song?id=1893974352) — 02:42
+
+<details class="player">
+<summary>▶ 网易云播放器 · Life Goes On (feat. Ty Dolla $ign)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=135963971&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -36,6 +41,6 @@ Ed Sheeran Atlantic Records  Life Goes On (Feat. Luke Combs)
 - 厂牌：Atlantic Records
 - 发行：2023-05-12
 - 类型：pop
-- 资料：[NeoDB](https://neodb.social/album/538In42TmbOnHg0DtuJs0C) · [Douban](https://music.douban.com/subject/36408133/)
+- 资料：[NeoDB](https://neodb.social/album/538In42TmbOnHg0DtuJs0C) · [Douban](https://music.douban.com/subject/36408133/) · [网易云音乐](https://music.163.com/#/album?id=135963971)
 
 <!-- gencover:end -->

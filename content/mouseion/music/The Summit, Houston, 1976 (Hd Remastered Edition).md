@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Hotel California — 07:02
+- [Hotel California](https://music.163.com/#/song?id=531954630) — 07:02
+
+<details class="player">
+<summary>▶ 网易云播放器 · The Summit, Houston, 1976 (Hd Remastered Edition)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=37366306&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -37,6 +42,6 @@ tags: ["音乐"]
 - 发行：2018-01-20
 - 类型：rock
 - 曲目：278
-- 资料：[NeoDB](https://neodb.social/album/11QIkNv4WQiOiIfqh9ZttJ) · [Douban](https://music.douban.com/subject/34130375/)
+- 资料：[NeoDB](https://neodb.social/album/11QIkNv4WQiOiIfqh9ZttJ) · [Douban](https://music.douban.com/subject/34130375/) · [网易云音乐](https://music.163.com/#/album?id=37366306)
 
 <!-- gencover:end -->

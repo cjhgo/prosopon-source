@@ -22,12 +22,17 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 问 (Live) — 03:28
-- 为你我受冷风吹 (Live) — 04:17
-- 明明白白我的心 (Live) — 04:40
-- 梦醒时分 (Live) — 04:43
-- 诱惑的街 (Live) — 05:23
-- 当爱已成往事 (Live) — 04:52
+- [问 (Live)](https://music.163.com/#/song?id=108143) — 03:28
+- [为你我受冷风吹 (Live)](https://music.163.com/#/song?id=108177) — 04:17
+- [明明白白我的心 (Live)](https://music.163.com/#/song?id=108141) — 04:40
+- [梦醒时分 (Live)](https://music.163.com/#/song?id=108145) — 04:43
+- [诱惑的街 (Live)](https://music.163.com/#/song?id=108180) — 05:23
+- [当爱已成往事 (Live)](https://music.163.com/#/song?id=108174) — 04:52
+
+<details class="player">
+<summary>▶ 网易云播放器 · 李宗盛 理性与感性作品音乐会 LIVE</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=10749&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

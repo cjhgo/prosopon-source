@@ -26,7 +26,12 @@ tags: ["音乐", "韩国", "流行"]
 
 ## 曲目
 
-- Begging You (Guide Ver.) (feat.Hyobin) — 03:38
+- [Begging You (Guide Ver.) (feat.Hyobin)](https://music.163.com/#/song?id=26128096) — 03:38
+
+<details class="player">
+<summary>▶ 网易云播放器 · Begging You (Begging you)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2393753&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ tags: ["音乐", "韩国", "流行"]
 - 发行：1995-10-30
 - 类型：rock
 - 曲目：182
-- 资料：[NeoDB](https://neodb.social/album/4dTJh5Msch9C3mz2AC6ZVM) · [Douban](https://music.douban.com/subject/26895349/)
+- 资料：[NeoDB](https://neodb.social/album/4dTJh5Msch9C3mz2AC6ZVM) · [Douban](https://music.douban.com/subject/26895349/) · [网易云音乐](https://music.163.com/#/album?id=2393753)
 
 <!-- gencover:end -->

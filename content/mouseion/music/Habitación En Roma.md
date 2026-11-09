@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Loving Strangers — 03:59
+- [Loving Strangers](https://music.163.com/#/song?id=2788529) — 03:59
+
+<details class="player">
+<summary>▶ 网易云播放器 · Habitación En Roma</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=281067&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ Jocelyn Pook为本片配乐，影片中的大多数配乐和歌曲是作曲家�
 - 发行：2010-01-01
 - 类型：soundtrack
 - 评分：9.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/4a0o4V3QuwFifVgwCwlE2p) · [Douban](https://music.douban.com/subject/4871619/)
+- 资料：[NeoDB](https://neodb.social/album/4a0o4V3QuwFifVgwCwlE2p) · [Douban](https://music.douban.com/subject/4871619/) · [网易云音乐](https://music.163.com/#/album?id=281067)
 
 <!-- gencover:end -->

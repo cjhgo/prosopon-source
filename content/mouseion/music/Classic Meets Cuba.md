@@ -26,7 +26,12 @@ tags: ["音乐", "古典", "世界音乐"]
 
 ## 曲目
 
-- Mambozart — 05:01
+- [Mambozart](https://music.163.com/#/song?id=27598890) — 05:01
+
+<details class="player">
+<summary>▶ 网易云播放器 · Classic Meets Cuba</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2643306&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -44,6 +49,6 @@ KB的成员包含两位兄弟，基瑞安·佛斯特(Kilian Forster)和托比亚
 - 发行：2004-02-03
 - 曲目：1077
 - 评分：8.8（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/4gDFvIwgcGTHi9GUAS7XvK) · [Douban](https://music.douban.com/subject/1409323/)
+- 资料：[NeoDB](https://neodb.social/album/4gDFvIwgcGTHi9GUAS7XvK) · [Douban](https://music.douban.com/subject/1409323/) · [网易云音乐](https://music.163.com/#/album?id=2643306)
 
 <!-- gencover:end -->

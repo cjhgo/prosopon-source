@@ -27,7 +27,12 @@ tags: ["音乐", "流行"]
 
 ## 曲目
 
-- Sign of the Times — 05:40
+- [Sign of the Times](https://music.163.com/#/song?id=477936858) — 05:41
+
+<details class="player">
+<summary>▶ 网易云播放器 · Harry Styles</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=35449247&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Harry Styles has been working in some solo tracks during this year and his antic
 - 类型：pop
 - 曲目：179
 - 评分：7.9（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/1zVT71NN8ZDfOkCjF26j76) · [Douban](https://music.douban.com/subject/27036056/)
+- 资料：[NeoDB](https://neodb.social/album/1zVT71NN8ZDfOkCjF26j76) · [Douban](https://music.douban.com/subject/27036056/) · [网易云音乐](https://music.163.com/#/album?id=35449247)
 
 <!-- gencover:end -->

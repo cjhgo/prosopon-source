@@ -26,7 +26,12 @@ tags: ["音乐", "器乐"]
 
 ## 曲目
 
-- Pursuit of the Cygnus Thief — 03:30
+- [Pursuit of the Cygnus Thief](https://music.163.com/#/song?id=29027293) — 03:30
+
+<details class="player">
+<summary>▶ 网易云播放器 · String & Wood</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1846211&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ John H. Clarke John Clarke Music  String & Wood
 - 发行：2011-08-04
 - 类型：classical
 - 曲目：241
-- 资料：[NeoDB](https://neodb.social/album/61zFpaLVKdB5reCCrPBSEb) · [Douban](https://music.douban.com/subject/26962282/)
+- 资料：[NeoDB](https://neodb.social/album/61zFpaLVKdB5reCCrPBSEb) · [Douban](https://music.douban.com/subject/26962282/) · [网易云音乐](https://music.163.com/#/album?id=1846211)
 
 <!-- gencover:end -->

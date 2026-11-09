@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Bohemian Rhapsody (Live Aid) — 02:28
+- [Bohemian Rhapsody (Live Aid)](https://music.163.com/#/song?id=1318816012) — 02:28
+
+<details class="player">
+<summary>▶ 网易云播放器 · Bohemian Rhapsody (The Original Soundtrack)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=73977486&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Bohemian Rhapsody: The Original Soundtrack is the soundtrack album to the 2018 b
 - 类型：soundtrack
 - 曲目：658
 - 评分：9.7（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/0CunNcxw1wGLk2NaS3Ap4U) · [Douban](https://music.douban.com/subject/30357048/)
+- 资料：[NeoDB](https://neodb.social/album/0CunNcxw1wGLk2NaS3Ap4U) · [Douban](https://music.douban.com/subject/30357048/) · [网易云音乐](https://music.163.com/#/album?id=73977486)
 
 <!-- gencover:end -->

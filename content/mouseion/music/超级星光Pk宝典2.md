@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 夜夜夜夜 (Live) — 04:48
+- [夜夜夜夜 (Live)](https://music.163.com/#/song?id=5252288) — 04:48
+
+<details class="player">
+<summary>▶ 网易云播放器 · 超级星光Pk宝典2</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=511908&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

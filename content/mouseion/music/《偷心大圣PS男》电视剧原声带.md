@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 我们没有在一起 (三立电视剧《偷心大圣PS男》片尾曲) — 04:41
+- [我们没有在一起 (三立电视剧《偷心大圣PS男》片尾曲)](https://music.163.com/#/song?id=394163) — 04:41
+
+<details class="player">
+<summary>▶ 网易云播放器 · 《偷心大圣PS男》电视剧原声带</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=39037&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Amerigo — 04:36
+- [Amerigo](https://music.163.com/#/song?id=18212255) — 04:36
+
+<details class="player">
+<summary>▶ 网易云播放器 · Banga</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1672562&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Banga is Patti Smith's first collection of original material since 2004's critic
 - 类型：rock
 - 曲目：202
 - 评分：9.1（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/4awRIl3WcGXfDnihJCMPhu) · [Douban](https://music.douban.com/subject/10574397/)
+- 资料：[NeoDB](https://neodb.social/album/4awRIl3WcGXfDnihJCMPhu) · [Douban](https://music.douban.com/subject/10574397/) · [网易云音乐](https://music.163.com/#/album?id=1672562)
 
 <!-- gencover:end -->

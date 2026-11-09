@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- you look like you love me — 03:44
+- [you look like you love me](https://music.163.com/#/song?id=2599668691) — 03:44
+
+<details class="player">
+<summary>▶ 网易云播放器 · you look like you love me</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=239507841&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -36,6 +41,6 @@ Ella Langley Riley Green Columbia  you look like you love me
 - 厂牌：Columbia
 - 发行：2024-06-21
 - 类型：pop
-- 资料：[NeoDB](https://neodb.social/album/5ujcs8cbEC6r117QRaDtGX) · [Douban](https://music.douban.com/subject/36960609/)
+- 资料：[NeoDB](https://neodb.social/album/5ujcs8cbEC6r117QRaDtGX) · [Douban](https://music.douban.com/subject/36960609/) · [网易云音乐](https://music.163.com/#/album?id=239507841)
 
 <!-- gencover:end -->

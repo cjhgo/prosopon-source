@@ -25,7 +25,12 @@ tags: ["音乐", "OST", "器乐"]
 
 ## 曲目
 
-- Hedwig's Theme — 05:09
+- [Hedwig's Theme](https://music.163.com/#/song?id=1486496) — 05:09
+
+<details class="player">
+<summary>▶ 网易云播放器 · Harry Potter and the Philosopher's Stone</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=151747&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -36,6 +41,6 @@ John Williams Atlantic UK  Harry Potter and the Philosopher's Stone
 - 厂牌：Atlantic UK
 - 发行：2001-10-29
 - 曲目：596
-- 资料：[NeoDB](https://neodb.social/album/7VQ2ugdp4WDneM99FTDZSf) · [Douban](https://music.douban.com/subject/3325561/)
+- 资料：[NeoDB](https://neodb.social/album/7VQ2ugdp4WDneM99FTDZSf) · [Douban](https://music.douban.com/subject/3325561/) · [网易云音乐](https://music.163.com/#/album?id=151747)
 
 <!-- gencover:end -->

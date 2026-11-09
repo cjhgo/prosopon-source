@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- **** Being Sober — 03:32
+- [**** Being Sober](https://music.163.com/#/song?id=1810602460) — 03:32
+
+<details class="player">
+<summary>▶ 网易云播放器 · **** Being Sober</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=121404069&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

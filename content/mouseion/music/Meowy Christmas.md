@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Silent Night — 03:12
+- [Silent Night](https://music.163.com/#/song?id=2864625) — 03:12
+
+<details class="player">
+<summary>▶ 网易云播放器 · Meowy Christmas</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=289286&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -36,6 +41,6 @@ JINGLE CATS 'MEOWY CHRISTMAS CD AND CASSETTE: The world's first album of songs s
 - 厂牌：Navarre Corporation/
 - 发行：1994-01-01
 - 曲目：508
-- 资料：[NeoDB](https://neodb.social/album/5n5tetC2sNQ67OpbC886BX) · [Douban](https://music.douban.com/subject/1949409/)
+- 资料：[NeoDB](https://neodb.social/album/5n5tetC2sNQ67OpbC886BX) · [Douban](https://music.douban.com/subject/1949409/) · [网易云音乐](https://music.163.com/#/album?id=289286)
 
 <!-- gencover:end -->

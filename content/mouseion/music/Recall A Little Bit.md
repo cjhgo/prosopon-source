@@ -23,7 +23,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 仙乐处处飘 — 02:37
+- [仙乐处处飘](https://music.163.com/#/song?id=863553296) — 02:37
+
+<details class="player">
+<summary>▶ 网易云播放器 · Recall A Little Bit</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=71706942&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -34,6 +39,6 @@ Lil’ Ashes (P) 2018 Sony Music Entertainment Hong Kong Ltd.  Recall A Little B
 - 厂牌：(P) 2018 Sony Music Entertainment Hong Kong Ltd.
 - 发行：2018-07-06
 - 曲目：46
-- 资料：[NeoDB](https://neodb.social/album/1nCxcSOOH7N8BFVKw24LPa)
+- 资料：[NeoDB](https://neodb.social/album/1nCxcSOOH7N8BFVKw24LPa) · [网易云音乐](https://music.163.com/#/album?id=71706942)
 
 <!-- gencover:end -->

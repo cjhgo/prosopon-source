@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Lover (First Dance Remix) — 03:54
+- [Lover (First Dance Remix)](https://music.163.com/#/song?id=1406003612) — 03:54
+
+<details class="player">
+<summary>▶ 网易云播放器 · Lover (First Dance Remix)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=83673596&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -37,6 +42,6 @@ tags: ["音乐"]
 - 发行：2019-11-26
 - 类型：pop
 - 曲目：28
-- 资料：[NeoDB](https://neodb.social/album/36RHdieQfzgVIL7cGtZyej) · [Douban](https://music.douban.com/subject/34900974/)
+- 资料：[NeoDB](https://neodb.social/album/36RHdieQfzgVIL7cGtZyej) · [Douban](https://music.douban.com/subject/34900974/) · [网易云音乐](https://music.163.com/#/album?id=83673596)
 
 <!-- gencover:end -->

@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- A Brand New Day — 04:34
+- [A Brand New Day](https://music.163.com/#/song?id=1300089) — 04:34
+
+<details class="player">
+<summary>▶ 网易云播放器 · Classics II</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=134008&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 还是分开（Acoustic Version） — 03:49
+- [还是分开（Acoustic Version）](https://music.163.com/#/song?id=2140448835) — 03:49
+
+<details class="player">
+<summary>▶ 网易云播放器 · 还是分开（CD版）</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=254180990&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -37,6 +42,6 @@ tags: ["音乐"]
 - 厂牌：映帆音乐
 - 发行：2017-03-06
 - 类型：pop
-- 资料：[NeoDB](https://neodb.social/album/3pGi9r6KSjLUq2WoaNMHdm) · [Douban](https://music.douban.com/subject/35008578/)
+- 资料：[NeoDB](https://neodb.social/album/3pGi9r6KSjLUq2WoaNMHdm) · [Douban](https://music.douban.com/subject/35008578/) · [网易云音乐](https://music.163.com/#/album?id=254180990)
 
 <!-- gencover:end -->

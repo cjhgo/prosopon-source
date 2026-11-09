@@ -21,7 +21,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 热爱105℃的你（抖音yihuik苡慧版） — 00:18
+- [热爱105℃的你（抖音yihuik苡慧版）](https://music.163.com/#/song?id=1844446555) — 00:18
+
+<details class="player">
+<summary>▶ 网易云播放器 · 热爱105℃的你（抖音yihuik苡慧版）</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=127301470&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

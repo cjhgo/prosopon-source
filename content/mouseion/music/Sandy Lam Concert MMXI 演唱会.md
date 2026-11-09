@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 为你我受冷风吹 (Live in Hong Kong/2011) — 04:21
+- [为你我受冷风吹 (Live in Hong Kong/2011)](https://music.163.com/#/song?id=255677) — 04:21
+
+<details class="player">
+<summary>▶ 网易云播放器 · Sandy Lam Concert MMXI 演唱会</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=25533&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

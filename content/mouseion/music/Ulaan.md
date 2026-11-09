@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Temeen Deerees Naran Oirhon — 03:43
+- [Temeen Deerees Naran Oirhon](https://music.163.com/#/song?id=2066723202) — 03:43
+
+<details class="player">
+<summary>▶ 网易云播放器 · Ulaan</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=170273351&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -63,6 +68,6 @@ Supported by Initiative Musik gGmbH with project funds from the Federal Governme
 - 类型：jazz
 - 曲目：149
 - 评分：8.3（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/6zdoOsNBsIfE7r6TL2cvQE) · [Douban](https://music.douban.com/subject/36460597/)
+- 资料：[NeoDB](https://neodb.social/album/6zdoOsNBsIfE7r6TL2cvQE) · [Douban](https://music.douban.com/subject/36460597/) · [网易云音乐](https://music.163.com/#/album?id=170273351)
 
 <!-- gencover:end -->

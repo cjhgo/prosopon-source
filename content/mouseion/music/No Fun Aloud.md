@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- The One You Love — 04:35
+- [The One You Love](https://music.163.com/#/song?id=2658203) — 04:35
+
+<details class="player">
+<summary>▶ 网易云播放器 · No Fun Aloud</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=267873&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ No Fun Aloud is the debut solo studio album by Glenn Frey, the guitarist for the
 - 类型：rock
 - 曲目：139
 - 评分：9.4（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/2flMT4EpyuGJRVVequun7U) · [Douban](https://music.douban.com/subject/2032781/)
+- 资料：[NeoDB](https://neodb.social/album/2flMT4EpyuGJRVVequun7U) · [Douban](https://music.douban.com/subject/2032781/) · [网易云音乐](https://music.163.com/#/album?id=267873)
 
 <!-- gencover:end -->

@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Souvenirs d'enfance — 02:53
+- [Souvenirs d'enfance](https://music.163.com/#/song?id=5038296) — 02:53
+
+<details class="player">
+<summary>▶ 网易云播放器 · Lettre à ma mère</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=500463&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

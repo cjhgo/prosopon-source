@@ -24,7 +24,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- You! Me! Dancing! — 06:14
+- [You! Me! Dancing!](https://music.163.com/#/song?id=16624395) — 06:14
+
+<details class="player">
+<summary>▶ 网易云播放器 · Sticking Fingers Into Sockets</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1534013&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -35,6 +40,6 @@ Check this out. We Throw Parties, You Throw Knives on youtube.
 - 厂牌：Arts & Crafts
 - 发行：2007-07-17
 - 曲目：148
-- 资料：[NeoDB](https://neodb.social/album/5gymZIvy3BxGBPwXch4TTt) · [Douban](https://music.douban.com/subject/2160788/)
+- 资料：[NeoDB](https://neodb.social/album/5gymZIvy3BxGBPwXch4TTt) · [Douban](https://music.douban.com/subject/2160788/) · [网易云音乐](https://music.163.com/#/album?id=1534013)
 
 <!-- gencover:end -->

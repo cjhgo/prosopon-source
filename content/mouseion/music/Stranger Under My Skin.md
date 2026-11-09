@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 因为爱情 (电影《将爱情进行到底》主题曲) — 03:38
+- [因为爱情 (电影《将爱情进行到底》主题曲)](https://music.163.com/#/song?id=64317) — 03:38
+
+<details class="player">
+<summary>▶ 网易云播放器 · Stranger Under My Skin</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=6355&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -69,6 +74,6 @@ My Private Christmas Song(英)
 - 类型：pop
 - 曲目：138
 - 评分：8.4（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/5zHV06pmNbhS8Aa9rtsZhc) · [Douban](https://music.douban.com/subject/6082657/)
+- 资料：[NeoDB](https://neodb.social/album/5zHV06pmNbhS8Aa9rtsZhc) · [Douban](https://music.douban.com/subject/6082657/) · [网易云音乐](https://music.163.com/#/album?id=6355)
 
 <!-- gencover:end -->

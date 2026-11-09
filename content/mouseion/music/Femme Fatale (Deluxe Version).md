@@ -23,7 +23,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- (Drop Dead) Beautiful — 03:36
+- [(Drop Dead) Beautiful](https://music.163.com/#/song?id=20515596) — 03:36
+
+<details class="player">
+<summary>▶ 网易云播放器 · Femme Fatale (Deluxe Version)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1910026&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -34,6 +39,6 @@ Britney Spears (P) 2011 JIVE Records, a unit of Sony Music Entertainment  Femme 
 - 厂牌：(P) 2011 JIVE Records, a unit of Sony Music Entertainment
 - 发行：2011-03-28
 - 曲目：325
-- 资料：[NeoDB](https://neodb.social/album/1lLFB4ZRtq5dr8jMfMwEHG)
+- 资料：[NeoDB](https://neodb.social/album/1lLFB4ZRtq5dr8jMfMwEHG) · [网易云音乐](https://music.163.com/#/album?id=1910026)
 
 <!-- gencover:end -->

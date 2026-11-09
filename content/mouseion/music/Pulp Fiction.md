@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Bullwinkle Part II — 02:30
+- [Bullwinkle Part II](https://music.163.com/#/song?id=5057822) — 02:30
+
+<details class="player">
+<summary>▶ 网易云播放器 · Pulp Fiction</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=501571&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ tags: ["音乐"]
 - 类型：soundtrack
 - 曲目：636
 - 评分：9.3（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/6pHmsAuLPPE1EXNvsh98rR) · [Douban](https://music.douban.com/subject/1394921/)
+- 资料：[NeoDB](https://neodb.social/album/6pHmsAuLPPE1EXNvsh98rR) · [Douban](https://music.douban.com/subject/1394921/) · [网易云音乐](https://music.163.com/#/album?id=501571)
 
 <!-- gencover:end -->

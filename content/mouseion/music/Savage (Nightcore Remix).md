@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Savage (Nightcore Remix) — 02:33
+- [Savage (Nightcore Remix)](https://music.163.com/#/song?id=1348917629) — 02:33
+
+<details class="player">
+<summary>▶ 网易云播放器 · Savage (Nightcore Remix)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=75725547&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ Bahari Bahari  SAVAGE
 - 发行：2018-04-20
 - 类型：electronic
 - 曲目：8
-- 资料：[NeoDB](https://neodb.social/album/6hlbq6FLIt0Vis596SmwWi) · [Douban](https://music.douban.com/subject/34334007/)
+- 资料：[NeoDB](https://neodb.social/album/6hlbq6FLIt0Vis596SmwWi) · [Douban](https://music.douban.com/subject/34334007/) · [网易云音乐](https://music.163.com/#/album?id=75725547)
 
 <!-- gencover:end -->

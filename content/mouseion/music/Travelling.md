@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Travelling — 03:47
+- [Travelling](https://music.163.com/#/song?id=2075611225) — 03:47
+
+<details class="player">
+<summary>▶ 网易云播放器 · Travelling</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=173034910&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

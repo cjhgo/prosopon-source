@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- DON'T PUSH ME — 03:15
+- [DON'T PUSH ME](https://music.163.com/#/song?id=20310407) — 03:15
+
+<details class="player">
+<summary>▶ 网易云播放器 · JADE</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1886784&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ tags: ["音乐"]
 - 发行：2002-09-26
 - 类型：pop
 - 曲目：234
-- 资料：[NeoDB](https://neodb.social/album/1gys3Ve1wJQshKDtKXtrOL) · [Douban](https://music.douban.com/subject/1785689/)
+- 资料：[NeoDB](https://neodb.social/album/1gys3Ve1wJQshKDtKXtrOL) · [Douban](https://music.douban.com/subject/1785689/) · [网易云音乐](https://music.163.com/#/album?id=1886784)
 
 <!-- gencover:end -->

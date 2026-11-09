@@ -27,7 +27,12 @@ tags: ["音乐", "华语", "独立"]
 
 ## 曲目
 
-- Malaimo — 00:41
+- [Malaimo](https://music.163.com/#/song?id=326737) — 00:41
+
+<details class="player">
+<summary>▶ 网易云播放器 · my life will...</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=32315&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -41,6 +46,6 @@ tags: ["音乐", "华语", "独立"]
 - 类型：pop
 - 曲目：135
 - 评分：8.7（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/5gWSdbaCYs96UMIqvhddMO) · [Douban](https://music.douban.com/subject/1788174/)
+- 资料：[NeoDB](https://neodb.social/album/5gWSdbaCYs96UMIqvhddMO) · [Douban](https://music.douban.com/subject/1788174/) · [网易云音乐](https://music.163.com/#/album?id=32315)
 
 <!-- gencover:end -->

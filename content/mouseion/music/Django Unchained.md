@@ -27,7 +27,12 @@ tags: ["音乐", "OST", "西部"]
 
 ## 曲目
 
-- Django — 02:53
+- [Django](https://music.163.com/#/song?id=26145409) — 02:54
+
+<details class="player">
+<summary>▶ 网易云播放器 · Django Unchained</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2397062&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Soundtrack [Clean Edition] Universal Republic  Django Unchained 被解救的姜�
 - 类型：soundtrack
 - 曲目：787
 - 评分：9.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/232fJM95anYPigTXAOc1Ed) · [Douban](https://music.douban.com/subject/20423764/)
+- 资料：[NeoDB](https://neodb.social/album/232fJM95anYPigTXAOc1Ed) · [Douban](https://music.douban.com/subject/20423764/) · [网易云音乐](https://music.163.com/#/album?id=2397062)
 
 <!-- gencover:end -->

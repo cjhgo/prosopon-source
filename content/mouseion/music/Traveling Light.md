@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Traveling Light — 03:29
+- [Traveling Light](https://music.163.com/#/song?id=1491585) — 03:29
+
+<details class="player">
+<summary>▶ 网易云播放器 · Traveling Light</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=152131&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -41,6 +46,6 @@ Joel Hanson和Sara Groves都是乡村歌手,Joel 在与Sara Groves合作前发�
 - 类型：folk
 - 曲目：17
 - 评分：9.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/03cqDSXwLxfSpvSKwN913D) · [Douban](https://music.douban.com/subject/4272150/)
+- 资料：[NeoDB](https://neodb.social/album/03cqDSXwLxfSpvSKwN913D) · [Douban](https://music.douban.com/subject/4272150/) · [网易云音乐](https://music.163.com/#/album?id=152131)
 
 <!-- gencover:end -->

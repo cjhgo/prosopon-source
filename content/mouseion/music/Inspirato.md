@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Usignolo (Nightingale) — 05:14
+- [Usignolo (Nightingale)](https://music.163.com/#/song?id=28437004) — 05:14
+
+<details class="player">
+<summary>▶ 网易云播放器 · Inspirato</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2791979&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -39,6 +44,6 @@ This project took 4 years to complete and over 30 years to compose the music tha
 - 发行：2014-04-01
 - 类型：pop
 - 曲目：728
-- 资料：[NeoDB](https://neodb.social/album/3z0ZQu2B66EB5dxWij3nvS) · [Douban](https://music.douban.com/subject/25840022/)
+- 资料：[NeoDB](https://neodb.social/album/3z0ZQu2B66EB5dxWij3nvS) · [Douban](https://music.douban.com/subject/25840022/) · [网易云音乐](https://music.163.com/#/album?id=2791979)
 
 <!-- gencover:end -->

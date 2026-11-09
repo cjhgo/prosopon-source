@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Papa Was a Rodeo — 05:01
+- [Papa Was a Rodeo](https://music.163.com/#/song?id=19159381) — 05:01
+
+<details class="player">
+<summary>▶ 网易云播放器 · I Already Love You</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1756590&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Devics主音Sara Lov在09年发行的首张个人作品Seasoned Eyes Were Beamin
 - 类型：folk
 - 曲目：216
 - 评分：8.5（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/1qmVCBcMVU3H6rlv8k8DWQ) · [Douban](https://music.douban.com/subject/5963531/)
+- 资料：[NeoDB](https://neodb.social/album/1qmVCBcMVU3H6rlv8k8DWQ) · [Douban](https://music.douban.com/subject/5963531/) · [网易云音乐](https://music.163.com/#/album?id=1756590)
 
 <!-- gencover:end -->

@@ -21,14 +21,19 @@ tags: ["音乐", "OST", "器乐"]
 
 ## 曲目
 
-- Mother — 02:11
-- The Rain (选自《菊次郎的夏天》) — 05:38
+- [Mother](https://music.163.com/#/song?id=444324) — 02:12
+- [The Rain](https://music.163.com/#/song?id=444312) — 05:38
+
+<details class="player">
+<summary>▶ 网易云播放器 · Kikujiro (Original Motion Picture Soundtrack)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=43083&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
 
 Joe Hisaishi Kikujiro (Original Motion Picture Soundtrack) Soundtrack 1999-05-26T07:00:00Z
 
-- 资料：[NeoDB](https://music.apple.com/us/album/kikujiro-original-motion-picture-soundtrack/1498700467?uo=4)
+- 资料：[NeoDB](https://music.apple.com/us/album/kikujiro-original-motion-picture-soundtrack/1498700467?uo=4) · [网易云音乐](https://music.163.com/#/album?id=43083)
 
 <!-- gencover:end -->

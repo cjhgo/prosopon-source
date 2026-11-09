@@ -27,7 +27,12 @@ tags: ["音乐", "爵士", "器乐"]
 
 ## 曲目
 
-- Jasmine Flower (茉莉花) — 04:39
+- [Jasmine Flower](https://music.163.com/#/song?id=18940218) — 04:39
+
+<details class="player">
+<summary>▶ 网易云播放器 · The Essential Kenny G</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1734656&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -47,6 +52,6 @@ tags: ["音乐", "爵士", "器乐"]
 - 类型：jazz
 - 曲目：889
 - 评分：9.3（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/4ex2crentTGXahmyS7G1Zj) · [Douban](https://music.douban.com/subject/1464465/)
+- 资料：[NeoDB](https://neodb.social/album/4ex2crentTGXahmyS7G1Zj) · [Douban](https://music.douban.com/subject/1464465/) · [网易云音乐](https://music.163.com/#/album?id=1734656)
 
 <!-- gencover:end -->

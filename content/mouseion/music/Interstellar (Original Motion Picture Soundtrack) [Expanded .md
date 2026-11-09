@@ -27,7 +27,12 @@ tags: ["音乐", "OST", "器乐"]
 
 ## 曲目
 
-- Cornfield Chase (原野追逐) — 02:06
+- [Cornfield Chase (电影《星际穿越》配乐)](https://music.163.com/#/song?id=29734857) — 02:07
+
+<details class="player">
+<summary>▶ 网易云播放器 · Interstellar (Original Motion Picture Soundtrack) [Expanded Edition]</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=3056517&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ STAR WHEEL CONSTELLATION CHART DIGIPAK
 - 类型：soundtrack
 - 曲目：313
 - 评分：9.4（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/2XNeCA2UYLjKnBldRO1mvo) · [Douban](https://music.douban.com/subject/26196835/)
+- 资料：[NeoDB](https://neodb.social/album/2XNeCA2UYLjKnBldRO1mvo) · [Douban](https://music.douban.com/subject/26196835/) · [网易云音乐](https://music.163.com/#/album?id=3056517)
 
 <!-- gencover:end -->

@@ -25,7 +25,12 @@ tags: ["音乐", "民谣", "现场"]
 
 ## 曲目
 
-- Three Rules of Discipline and the Eight Rules of Attention (三大纪律八项注意) — 02:26
+- [Three Rules of Discipline and the Eight Rules of Attention](https://music.163.com/#/song?id=552175255) — 02:26
+
+<details class="player">
+<summary>▶ 网易云播放器 · Together in Concert (Remastered 1999)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=38319325&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -39,6 +44,6 @@ This is a live double CD recorded during a series of concerts in 1975. In the wo
 - 厂牌：Rising Son Records
 - 发行：1975-11-04
 - 曲目：488
-- 资料：[NeoDB](https://neodb.social/album/6LFm2XBZkDHGIkPBe4jvb2) · [Douban](https://music.douban.com/subject/3258822/)
+- 资料：[NeoDB](https://neodb.social/album/6LFm2XBZkDHGIkPBe4jvb2) · [Douban](https://music.douban.com/subject/3258822/) · [网易云音乐](https://music.163.com/#/album?id=38319325)
 
 <!-- gencover:end -->

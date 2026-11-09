@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Made You Look (A Cappella) — 02:13
+- [Made You Look (A Cappella)](https://music.163.com/#/song?id=2004873604) — 02:13
+
+<details class="player">
+<summary>▶ 网易云播放器 · Made You Look (A Cappella)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=156134874&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -37,6 +42,6 @@ Meghan Trainor Sony  Made You Look (A Cappella)
 - 发行：2022-12-09
 - 类型：pop
 - 曲目：26
-- 资料：[NeoDB](https://neodb.social/album/5z3lMPEi4iPbAfWvobO6Cj) · [Douban](https://music.douban.com/subject/36184930/)
+- 资料：[NeoDB](https://neodb.social/album/5z3lMPEi4iPbAfWvobO6Cj) · [Douban](https://music.douban.com/subject/36184930/) · [网易云音乐](https://music.163.com/#/album?id=156134874)
 
 <!-- gencover:end -->

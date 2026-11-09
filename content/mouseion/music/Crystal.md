@@ -24,7 +24,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Scaborough Fair — 03:11
+- [Scaborough Fair](https://music.163.com/#/song?id=2700479) — 03:11
+
+<details class="player">
+<summary>▶ 网易云播放器 · Crystal</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=272350&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -34,6 +39,6 @@ tags: ["音乐"]
 - 艺人：Hayley Westenra
 - 厂牌：DECCA
 - 发行：2006-03-22
-- 资料：[NeoDB](https://neodb.social/album/10zO1IdXVP0FwwssysKtvk) · [Douban](https://music.douban.com/subject/2296431/)
+- 资料：[NeoDB](https://neodb.social/album/10zO1IdXVP0FwwssysKtvk) · [Douban](https://music.douban.com/subject/2296431/) · [网易云音乐](https://music.163.com/#/album?id=272350)
 
 <!-- gencover:end -->

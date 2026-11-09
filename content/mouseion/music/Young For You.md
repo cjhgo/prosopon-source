@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Young For You — 03:39
+- [Young For You](https://music.163.com/#/song?id=356034) — 03:39
+
+<details class="player">
+<summary>▶ 网易云播放器 · Young For You</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=35147&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -46,6 +51,6 @@ GALA录这张唱片的时候没有鼓手，是只有主唱、吉他手、贝司�
 - 类型：rock
 - 曲目：149
 - 评分：8.5（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/5oJIIhdsJEQPe8w5sKcSgp) · [Douban](https://music.douban.com/subject/1758337/)
+- 资料：[NeoDB](https://neodb.social/album/5oJIIhdsJEQPe8w5sKcSgp) · [Douban](https://music.douban.com/subject/1758337/) · [网易云音乐](https://music.163.com/#/album?id=35147)
 
 <!-- gencover:end -->

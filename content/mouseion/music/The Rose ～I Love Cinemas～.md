@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- What Is a Youth? — 04:03
+- [What Is a Youth?](https://music.163.com/#/song?id=22742147) — 04:03
+
+<details class="player">
+<summary>▶ 网易云播放器 · The Rose ～I Love Cinemas～</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2088310&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ tags: ["音乐"]
 - 类型：pop
 - 曲目：174
 - 评分：9.1（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/2sgMebqzhCm4B94CTCUand) · [Douban](https://music.douban.com/subject/2977909/)
+- 资料：[NeoDB](https://neodb.social/album/2sgMebqzhCm4B94CTCUand) · [Douban](https://music.douban.com/subject/2977909/) · [网易云音乐](https://music.163.com/#/album?id=2088310)
 
 <!-- gencover:end -->

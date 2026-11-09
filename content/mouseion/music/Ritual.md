@@ -26,7 +26,12 @@ tags: ["音乐", "器乐"]
 
 ## 曲目
 
-- Midnight Waltz — 04:31
+- [Midnight Waltz](https://music.163.com/#/song?id=1070924) — 04:31
+
+<details class="player">
+<summary>▶ 网易云播放器 · Ritual</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=111632&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ tags: ["音乐", "器乐"]
 - 类型：classical
 - 曲目：118
 - 评分：8.5（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/6Y3CYg8O4ShQztrVWtJFud) · [Douban](https://music.douban.com/subject/3903561/)
+- 资料：[NeoDB](https://neodb.social/album/6Y3CYg8O4ShQztrVWtJFud) · [Douban](https://music.douban.com/subject/3903561/) · [网易云音乐](https://music.163.com/#/album?id=111632)
 
 <!-- gencover:end -->

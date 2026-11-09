@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- YOLO — 03:35
+- [YOLO](https://music.163.com/#/song?id=1376121050) — 03:35
+
+<details class="player">
+<summary>▶ 网易云播放器 · YOLO</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=80236378&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -36,6 +41,6 @@ tags: ["音乐"]
 - 厂牌：㈜ 카카오 M
 - 发行：2019-07-05
 - 类型：pop
-- 资料：[NeoDB](https://neodb.social/album/0zg0bZJURifCBteSXP4fGa) · [Douban](https://music.douban.com/subject/34460883/)
+- 资料：[NeoDB](https://neodb.social/album/0zg0bZJURifCBteSXP4fGa) · [Douban](https://music.douban.com/subject/34460883/) · [网易云音乐](https://music.163.com/#/album?id=80236378)
 
 <!-- gencover:end -->

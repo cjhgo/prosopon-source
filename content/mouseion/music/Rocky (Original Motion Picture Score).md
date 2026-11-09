@@ -26,8 +26,13 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Gonna Fly Now (Theme from Rocky) — 02:49
-- Going the Distance — 02:39
+- [Gonna Fly Now (Theme from Rocky)](https://music.163.com/#/song?id=2285204) — 02:49
+- [Going the Distance](https://music.163.com/#/song?id=2285212) — 02:39
+
+<details class="player">
+<summary>▶ 网易云播放器 · Rocky (Original Motion Picture Score)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=230467&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -39,6 +44,6 @@ Bill Conti Capitol  Rocky: Original Motion Picture Score
 - 发行：1990-10-25
 - 曲目：214
 - 评分：8.7（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/52uIeHCwqiCOJ9h5hbIDiW) · [Douban](https://music.douban.com/subject/1579614/)
+- 资料：[NeoDB](https://neodb.social/album/52uIeHCwqiCOJ9h5hbIDiW) · [Douban](https://music.douban.com/subject/1579614/) · [网易云音乐](https://music.163.com/#/album?id=230467)
 
 <!-- gencover:end -->

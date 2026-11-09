@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Umbrella — 05:03
+- [Umbrella](https://music.163.com/#/song?id=34528606) — 05:03
+
+<details class="player">
+<summary>▶ 网易云播放器 · TIARA</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=3279670&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -54,6 +59,6 @@ GravityRain
 - 发行：2015-08-22
 - 曲目：356
 - 评分：7.6（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/6sKsQoYLb8W8wVpwiCFOO5) · [Douban](https://music.douban.com/subject/26605427/)
+- 资料：[NeoDB](https://neodb.social/album/6sKsQoYLb8W8wVpwiCFOO5) · [Douban](https://music.douban.com/subject/26605427/) · [网易云音乐](https://music.163.com/#/album?id=3279670)
 
 <!-- gencover:end -->

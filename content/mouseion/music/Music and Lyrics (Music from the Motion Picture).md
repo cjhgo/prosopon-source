@@ -25,8 +25,13 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Way Back Into Love (电影《K歌情人》插曲) — 04:38
-- Way Back Into Love (Demo) — 04:12
+- [Way Back Into Love (电影《K歌情人》插曲)](https://music.163.com/#/song?id=5046372) — 04:38
+- [Way Back Into Love (Demo)](https://music.163.com/#/song?id=5046367) — 04:12
+
+<details class="player">
+<summary>▶ 网易云播放器 · Music and Lyrics (Music from the Motion Picture)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=500930&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ Various Artists IDOL  Music and Lyrics (Music from and Inspired By the Motion Pi
 - 发行：2006-02-13
 - 类型：soundtrack
 - 曲目：145
-- 资料：[NeoDB](https://neodb.social/album/5YhUVTeJPDbUX0OiZfdnQ9) · [Douban](https://music.douban.com/subject/33768621/)
+- 资料：[NeoDB](https://neodb.social/album/5YhUVTeJPDbUX0OiZfdnQ9) · [Douban](https://music.douban.com/subject/33768621/) · [网易云音乐](https://music.163.com/#/album?id=500930)
 
 <!-- gencover:end -->

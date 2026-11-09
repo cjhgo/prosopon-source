@@ -27,7 +27,12 @@ tags: ["音乐", "OST", "西部"]
 
 ## 曲目
 
-- Jim Jones At Botany Bay — 04:10
+- [Jim Jones At Botany Bay (From "The Hateful Eight" Soundtrack)](https://music.163.com/#/song?id=39449220) — 04:11
+
+<details class="player">
+<summary>▶ 网易云播放器 · Quentin Tarantino's The Hateful Eight (Original Motion Picture Soundtrack)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=3426919&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -44,6 +49,6 @@ The opening track, L’ultimo diligence di Red Rock (Versione Integrale), was re
 - 类型：soundtrack
 - 曲目：1082
 - 评分：8.7（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/73f7qNSOyEhewkIkmMR30q) · [Douban](https://music.douban.com/subject/26671610/)
+- 资料：[NeoDB](https://neodb.social/album/73f7qNSOyEhewkIkmMR30q) · [Douban](https://music.douban.com/subject/26671610/) · [网易云音乐](https://music.163.com/#/album?id=3426919)
 
 <!-- gencover:end -->

@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Welcome Home — 04:48
+- [Welcome Home](https://music.163.com/#/song?id=18495436) — 04:48
+
+<details class="player">
+<summary>▶ 网易云播放器 · Ghost</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1695884&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Radical Face来自美国佛罗里达的Jacksonville。本名Ben Cooper，开创�
 - 类型：folk
 - 曲目：200
 - 评分：8.4（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/2DIjzvmWDp6YxnMUzCzOlI) · [Douban](https://music.douban.com/subject/1990406/)
+- 资料：[NeoDB](https://neodb.social/album/2DIjzvmWDp6YxnMUzCzOlI) · [Douban](https://music.douban.com/subject/1990406/) · [网易云音乐](https://music.163.com/#/album?id=1695884)
 
 <!-- gencover:end -->

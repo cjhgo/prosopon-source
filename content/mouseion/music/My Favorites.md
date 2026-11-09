@@ -27,7 +27,12 @@ tags: ["音乐", "器乐"]
 
 ## 曲目
 
-- Wonderful Tonight — 03:45
+- [Wonderful Tonight](https://music.163.com/#/song?id=441479) — 03:45
+
+<details class="player">
+<summary>▶ 网易云播放器 · My Favorites</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=42872&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -54,6 +59,6 @@ tags: ["音乐", "器乐"]
 - 类型：easy-listening
 - 曲目：240
 - 评分：9.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/4K3j6XNcknuIW7BgHYEqNh) · [Douban](https://music.douban.com/subject/3183500/)
+- 资料：[NeoDB](https://neodb.social/album/4K3j6XNcknuIW7BgHYEqNh) · [Douban](https://music.douban.com/subject/3183500/) · [网易云音乐](https://music.163.com/#/album?id=42872)
 
 <!-- gencover:end -->

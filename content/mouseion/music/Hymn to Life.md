@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Hymn To Life — 11:37
+- [Hymn To Life](https://music.163.com/#/song?id=1844236945) — 11:37
+
+<details class="player">
+<summary>▶ 网易云播放器 · Hymn to Life</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=127251136&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Japanese edition of the Stratovarius guitarist's second  album. Featuring Michae
 - 类型：rock
 - 曲目：193
 - 评分：9.5（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/02eze1pQAVYfe7IRgoXHUi) · [Douban](https://music.douban.com/subject/1394962/)
+- 资料：[NeoDB](https://neodb.social/album/02eze1pQAVYfe7IRgoXHUi) · [Douban](https://music.douban.com/subject/1394962/) · [网易云音乐](https://music.163.com/#/album?id=127251136)
 
 <!-- gencover:end -->

@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- F.I.G.H.T. — 06:31
+- [F.I.G.H.T.](https://music.163.com/#/song?id=1325914865) — 06:31
+
+<details class="player">
+<summary>▶ 网易云播放器 · Creed II: The Album</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=74437106&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

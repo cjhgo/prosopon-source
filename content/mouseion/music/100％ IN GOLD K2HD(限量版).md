@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 顺流逆流 — 03:44
+- [顺流逆流](https://music.163.com/#/song?id=28186082) — 03:44
+
+<details class="player">
+<summary>▶ 网易云播放器 · 100% IN GOLD K2HD(限量版)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2740596&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

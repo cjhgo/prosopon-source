@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Almost Lover (电影《命中注定》插曲) — 04:30
+- [Almost Lover (电影《命中注定》插曲)](https://music.163.com/#/song?id=16426514) — 04:30
+
+<details class="player">
+<summary>▶ 网易云播放器 · One Cell In The Sea</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=1514469&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -41,6 +46,6 @@ A Fine Frenzy is actually just a fine young singer-songwriter from Seattle, born
 - 类型：folk
 - 曲目：248
 - 评分：8.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/2IarVznhPn3aPpkr4jhCs8) · [Douban](https://music.douban.com/subject/2144747/)
+- 资料：[NeoDB](https://neodb.social/album/2IarVznhPn3aPpkr4jhCs8) · [Douban](https://music.douban.com/subject/2144747/) · [网易云音乐](https://music.163.com/#/album?id=1514469)
 
 <!-- gencover:end -->

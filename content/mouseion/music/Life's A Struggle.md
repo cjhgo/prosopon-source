@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Life's A Struggle — 06:12
+- [Life's A Struggle](https://music.163.com/#/song?id=145223) — 06:12
+
+<details class="player">
+<summary>▶ 网易云播放器 · Life's A Struggle</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=14529&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -44,6 +49,6 @@ M80，在TENSION首张专辑亮过相，是个中文名字叫做宋岳庭的大�
 - 类型：hip-hop
 - 曲目：268
 - 评分：9.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/0zgS4EOfyFJBlpyrdUjq5I) · [Douban](https://music.douban.com/subject/1437412/)
+- 资料：[NeoDB](https://neodb.social/album/0zgS4EOfyFJBlpyrdUjq5I) · [Douban](https://music.douban.com/subject/1437412/) · [网易云音乐](https://music.163.com/#/album?id=14529)
 
 <!-- gencover:end -->

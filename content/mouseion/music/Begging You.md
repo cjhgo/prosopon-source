@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Begging You (Guide Ver.) — 03:39
+- [Begging You (Guide Ver.)](https://music.163.com/#/song?id=26330903) — 03:39
+
+<details class="player">
+<summary>▶ 网易云播放器 · Begging You</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2454001&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ tags: ["音乐"]
 - 发行：2013-03-25
 - 类型：pop
 - 曲目：79
-- 资料：[NeoDB](https://neodb.social/album/1gMSBSMbFNQdUiTLq1kSJL) · [Douban](https://music.douban.com/subject/23781203/)
+- 资料：[NeoDB](https://neodb.social/album/1gMSBSMbFNQdUiTLq1kSJL) · [Douban](https://music.douban.com/subject/23781203/) · [网易云音乐](https://music.163.com/#/album?id=2454001)
 
 <!-- gencover:end -->

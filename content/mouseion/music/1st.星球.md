@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 漠河舞厅 — 05:34
+- [漠河舞厅](https://music.163.com/#/song?id=1430319727) — 05:34
+
+<details class="player">
+<summary>▶ 网易云播放器 · 1st.星球</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=90108348&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ tags: ["音乐"]
 - 类型：folk
 - 曲目：21
 - 评分：4.8（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/7V22ucYFpzRr5xwoUsCUeS) · [Douban](https://music.douban.com/subject/35088091/)
+- 资料：[NeoDB](https://neodb.social/album/7V22ucYFpzRr5xwoUsCUeS) · [Douban](https://music.douban.com/subject/35088091/) · [网易云音乐](https://music.163.com/#/album?id=90108348)
 
 <!-- gencover:end -->

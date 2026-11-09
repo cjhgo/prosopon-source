@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Your Man — 03:33
+- [Your Man](https://music.163.com/#/song?id=28157606) — 03:33
+
+<details class="player">
+<summary>▶ 网易云播放器 · Double Cream 5: 20 Years of Nashville #1's 1992-2012</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2736374&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Married Life (电影《飞屋环游记》配乐) — 04:11
+- [Married Life (电影《飞屋环游记》配乐)](https://music.163.com/#/song?id=1709302) — 04:11
+
+<details class="player">
+<summary>▶ 网易云播放器 · Up</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=173193&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -44,6 +49,6 @@ The Up Soundtrack is only available as a digital download.
 - 类型：soundtrack
 - 曲目：850
 - 评分：8.8（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/6pGIFprNe9GXny9WAaqe34) · [Douban](https://music.douban.com/subject/3765324/)
+- 资料：[NeoDB](https://neodb.social/album/6pGIFprNe9GXny9WAaqe34) · [Douban](https://music.douban.com/subject/3765324/) · [网易云音乐](https://music.163.com/#/album?id=173193)
 
 <!-- gencover:end -->

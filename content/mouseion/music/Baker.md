@@ -22,7 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 2 days into college — 02:48
+- [2 days into college](https://music.163.com/#/song?id=2616968538) — 02:48
+
+<details class="player">
+<summary>▶ 网易云播放器 · Baker</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=244924060&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

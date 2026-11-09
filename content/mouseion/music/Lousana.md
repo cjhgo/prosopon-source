@@ -21,7 +21,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Lousana（离别） — 03:47
+- [Lousana（离别）](https://music.163.com/#/song?id=3398057570) — 03:47
+
+<details class="player">
+<summary>▶ 网易云播放器 · Lousana</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=383628729&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑信息

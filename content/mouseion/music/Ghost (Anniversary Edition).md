@@ -23,7 +23,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Welcome Home, Son (Remastered) — 04:47
+- [Welcome Home, Son (Remastered)](https://music.163.com/#/song?id=1395957507) — 04:47
+
+<details class="player">
+<summary>▶ 网易云播放器 · Ghost (Anniversary Edition)</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=82260994&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -34,6 +39,6 @@ Radical Face 2019 Bear Machine  Ghost (Anniversary Edition)
 - 厂牌：2019 Bear Machine
 - 发行：2019-10-18
 - 曲目：696
-- 资料：[NeoDB](https://neodb.social/album/5VgpVZC4tzUpLhbLtkDmOD)
+- 资料：[NeoDB](https://neodb.social/album/5VgpVZC4tzUpLhbLtkDmOD) · [网易云音乐](https://music.163.com/#/album?id=82260994)
 
 <!-- gencover:end -->

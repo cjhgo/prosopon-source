@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- bad guy — 03:14
+- [bad guy](https://music.163.com/#/song?id=1355147933) — 03:14
+
+<details class="player">
+<summary>▶ 网易云播放器 · WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=78243642&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -52,6 +57,6 @@ Billie: “I have to just sit back and actually look at what's going on. Our sho
 - 类型：electronic
 - 曲目：203
 - 评分：7.4（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/06baFXW11HcTQauYGZgGk0) · [Douban](https://music.douban.com/subject/30450334/)
+- 资料：[NeoDB](https://neodb.social/album/06baFXW11HcTQauYGZgGk0) · [Douban](https://music.douban.com/subject/30450334/) · [网易云音乐](https://music.163.com/#/album?id=78243642)
 
 <!-- gencover:end -->

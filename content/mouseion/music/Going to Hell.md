@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Follow Me Down — 04:41
+- [Follow Me Down](https://music.163.com/#/song?id=1920699807) — 04:41
+
+<details class="player">
+<summary>▶ 网易云播放器 · Going to Hell</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=140445785&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ THE PRETTY RECKLESS formed in 2009 and released their debut album LIGHT ME UP in
 - 类型：rock
 - 曲目：276
 - 评分：8.2（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/1OQXofHj8u21jFlqKsJZRk) · [Douban](https://music.douban.com/subject/25817391/)
+- 资料：[NeoDB](https://neodb.social/album/1OQXofHj8u21jFlqKsJZRk) · [Douban](https://music.douban.com/subject/25817391/) · [网易云音乐](https://music.163.com/#/album?id=140445785)
 
 <!-- gencover:end -->

@@ -24,7 +24,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Hotel California (1999 Remaster) — 06:30
+- [Hotel California (1999 Remaster)](https://music.163.com/#/song?id=1318509823) — 06:30
+
+<details class="player">
+<summary>▶ 网易云播放器 · Selected Works 1972-1999</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=73950031&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -35,6 +40,6 @@ Eagles The Eagles Elektra / Wea  Selected Works: 1972-1999
 - 厂牌：Elektra / Wea
 - 发行：2000-11-14
 - 曲目：883
-- 资料：[NeoDB](https://neodb.social/album/07pSQQJHwkYiPoI7359tpE) · [Douban](https://music.douban.com/subject/1457780/)
+- 资料：[NeoDB](https://neodb.social/album/07pSQQJHwkYiPoI7359tpE) · [Douban](https://music.douban.com/subject/1457780/) · [网易云音乐](https://music.163.com/#/album?id=73950031)
 
 <!-- gencover:end -->

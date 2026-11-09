@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- How Far I'll Go (电影《海洋奇缘》主题曲) — 02:56
+- [How Far I'll Go (电影《海洋奇缘》主题曲)](https://music.163.com/#/song?id=437856225) — 02:56
+
+<details class="player">
+<summary>▶ 网易云播放器 · How Far I'll Go</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=34943683&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -43,6 +48,6 @@ Alessia Cara，年仅19岁的新世代创作女声，甚至Taylor Swift都非常
 - 类型：pop
 - 曲目：15
 - 评分：8.5（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/1KD8TZQVTerBu7QJl7rNXa) · [Douban](https://music.douban.com/subject/26927278/)
+- 资料：[NeoDB](https://neodb.social/album/1KD8TZQVTerBu7QJl7rNXa) · [Douban](https://music.douban.com/subject/26927278/) · [网易云音乐](https://music.163.com/#/album?id=34943683)
 
 <!-- gencover:end -->

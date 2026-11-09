@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Golden Age — 04:46
+- [Golden Age](https://music.163.com/#/song?id=3972145) — 04:46
+
+<details class="player">
+<summary>▶ 网易云播放器 · Beach Fossils</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=401694&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ Beach Fossils offers warm and inviting melodies that evoke the haunted sounds of
 - 发行：2010-05-25
 - 曲目：133
 - 评分：7.1（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/1sN2BUdY2D0ZyS0K9iR8wA) · [Douban](https://music.douban.com/subject/4921481/)
+- 资料：[NeoDB](https://neodb.social/album/1sN2BUdY2D0ZyS0K9iR8wA) · [Douban](https://music.douban.com/subject/4921481/) · [网易云音乐](https://music.163.com/#/album?id=401694)
 
 <!-- gencover:end -->

@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Gimme! Gimme! Gimme! (A Man After Midnight) — 04:49
+- [Gimme! Gimme! Gimme! (A Man After Midnight)](https://music.163.com/#/song?id=3880252) — 04:49
+
+<details class="player">
+<summary>▶ 网易云播放器 · ABBA Gold: Greatest Hits</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=392576&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ Deluxe CD/DVD edition of this collection from the beloved Swedish pop band. The 
 - 类型：pop
 - 曲目：333
 - 评分：9.9（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/43yD6d77o1TC5RDf6tP2zH) · [Douban](https://music.douban.com/subject/3770688/)
+- 资料：[NeoDB](https://neodb.social/album/43yD6d77o1TC5RDf6tP2zH) · [Douban](https://music.douban.com/subject/3770688/) · [网易云音乐](https://music.163.com/#/album?id=392576)
 
 <!-- gencover:end -->

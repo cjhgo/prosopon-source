@@ -25,7 +25,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Saturnus — 02:56
+- [Saturnus](https://music.163.com/#/song?id=26224538) — 02:56
+
+<details class="player">
+<summary>▶ 网易云播放器 · sátt á sviðum</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=2422932&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -37,6 +42,6 @@ Misha Mishenko Flowers Blossom In the Space  sátt á sviðum
 - 发行：2013-04-08
 - 类型：classical
 - 曲目：91
-- 资料：[NeoDB](https://neodb.social/album/1iWK6IprzHu3ON4cdfV6KF) · [Douban](https://music.douban.com/subject/24163560/)
+- 资料：[NeoDB](https://neodb.social/album/1iWK6IprzHu3ON4cdfV6KF) · [Douban](https://music.douban.com/subject/24163560/) · [网易云音乐](https://music.163.com/#/album?id=2422932)
 
 <!-- gencover:end -->

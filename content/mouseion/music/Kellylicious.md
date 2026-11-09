@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- 有时寂寞 — 03:59
+- [有时寂寞](https://music.163.com/#/song?id=213292) — 03:59
+
+<details class="player">
+<summary>▶ 网易云播放器 · Kellylicious</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=21615&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -41,6 +46,6 @@ tags: ["音乐"]
 - 类型：pop
 - 曲目：191
 - 评分：6.8（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/5WAC8CY4KiJlezNRVXtP3b) · [Douban](https://music.douban.com/subject/3068862/)
+- 资料：[NeoDB](https://neodb.social/album/5WAC8CY4KiJlezNRVXtP3b) · [Douban](https://music.douban.com/subject/3068862/) · [网易云音乐](https://music.163.com/#/album?id=21615)
 
 <!-- gencover:end -->

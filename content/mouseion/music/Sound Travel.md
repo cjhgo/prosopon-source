@@ -26,7 +26,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Rain, Totoro Forest — 08:26
+- [Rain, Totoro Forest](https://music.163.com/#/song?id=853708) — 08:26
+
+<details class="player">
+<summary>▶ 网易云播放器 · Sound Travel</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=85066&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -38,6 +43,6 @@ The Nature Sounds Society Japan Self-Released  Sound Travel
 - 发行：2011-04-25
 - 类型：easy-listening
 - 曲目：275
-- 资料：[NeoDB](https://neodb.social/album/6RjtkvIcRqBluoZaCy72pS) · [Douban](https://music.douban.com/subject/27041042/)
+- 资料：[NeoDB](https://neodb.social/album/6RjtkvIcRqBluoZaCy72pS) · [Douban](https://music.douban.com/subject/27041042/) · [网易云音乐](https://music.163.com/#/album?id=85066)
 
 <!-- gencover:end -->

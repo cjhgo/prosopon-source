@@ -27,7 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- Starboy — 03:50
+- [Starboy](https://music.163.com/#/song?id=431610014) — 03:50
+
+<details class="player">
+<summary>▶ 网易云播放器 · Starboy</summary>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="430" src="https://music.163.com/outchain/player?type=1&id=34881446&auto=0&height=430"></iframe>
+</details>
 
 <!-- gencover:begin -->
 ## 专辑简介
@@ -40,6 +45,6 @@ tags: ["音乐"]
 - 类型：放克/灵歌/R&B
 - 曲目：320
 - 评分：7.9（NeoDB）
-- 资料：[NeoDB](https://neodb.social/album/62Bfz0YjRoz59h0ix2aOzG) · [Douban](https://music.douban.com/subject/26904227/)
+- 资料：[NeoDB](https://neodb.social/album/62Bfz0YjRoz59h0ix2aOzG) · [Douban](https://music.douban.com/subject/26904227/) · [网易云音乐](https://music.163.com/#/album?id=34881446)
 
 <!-- gencover:end -->
