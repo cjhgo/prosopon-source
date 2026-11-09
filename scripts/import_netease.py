@@ -308,16 +308,59 @@ def _track_line(song: dict) -> str:
     return f"- {name} — {_fmt_duration(song['duration'])}"
 
 
-def _play_link(album_id) -> str:
-    """内嵌播放器已不可用(网易云 outchain 在 iframe 里报「资源加载失败」,
-    直链 mp3 也 302 到 /404), 退化为一个显式播放入口。"""
-    return f"> [▶ 在网易云播放整张专辑]({_album_url(album_id)})"
+def _html_escape(text) -> str:
+    return (
+        str(text or "")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+
+
+def _player_html(album_id, tracks: list[dict]) -> str:
+    """曲目播放器 UI: 纯 HTML + 链接。
+
+    内嵌播放已不可用(outchain 在第三方域报「资源加载失败」, mp3 直链 404),
+    故做成「像播放器、点击跳网易云」的外观: 播放钮 → 专辑页, 每行 → 单曲页。
+    """
+    rows = []
+    for i, track in enumerate(tracks, 1):
+        name = _html_escape(track["name"])
+        dur = _html_escape(track.get("duration", ""))
+        url = track.get("url")
+        inner = (
+            f'<span class="ncm-idx">{i}</span>'
+            f'<span class="ncm-name">{name}</span>'
+            f'<span class="ncm-time">{dur}</span>'
+        )
+        if url:
+            rows.append(
+                f'<a class="ncm-row" href="{_html_escape(url)}" target="_blank" '
+                f'rel="noopener">{inner}</a>'
+            )
+        else:
+            rows.append(f'<span class="ncm-row ncm-row-static">{inner}</span>')
+    return (
+        '<div class="ncm-player">\n'
+        f'<a class="ncm-play" href="{_html_escape(_album_url(album_id))}" target="_blank" '
+        'rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑">'
+        '<span class="ncm-play-icon">▶</span></a>\n'
+        '<div class="ncm-list">\n' + "\n".join(rows) + "\n</div>\n</div>"
+    )
 
 
 def _tracks_section(album: dict) -> str:
-    """我喜欢的曲目(每条链到网易云单曲页) + 整专播放入口。"""
-    lines = "\n".join(_track_line(s) for s in album["songs"])
-    return f"## 曲目\n\n{lines}\n\n{_play_link(album['id'])}"
+    """我喜欢的曲目: 播放器 UI(行 → 单曲页, 播放钮 → 专辑页)。"""
+    tracks = [
+        {
+            "name": song["name"] + (f" ({song['alias']})" if song.get("alias") else ""),
+            "duration": _fmt_duration(song["duration"]),
+            "url": _song_url(song["id"]) if song.get("id") else None,
+        }
+        for song in album["songs"]
+    ]
+    return f"## 曲目\n\n{_player_html(album['id'], tracks)}"
 
 
 def _safe_stem(title: str) -> str:

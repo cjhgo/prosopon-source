@@ -22,10 +22,13 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [Kiss The Rain 비를 맞다](https://music.163.com/#/song?id=22829933) — 05:00
-- [River Flows in You](https://music.163.com/#/song?id=22829932) — 03:35
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2076830)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=2076830" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=22829933" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Kiss The Rain 비를 맞다</span><span class="ncm-time">05:00</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=22829932" target="_blank" rel="noopener"><span class="ncm-idx">2</span><span class="ncm-name">River Flows in You</span><span class="ncm-time">03:35</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑信息

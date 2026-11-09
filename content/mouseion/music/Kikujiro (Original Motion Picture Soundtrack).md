@@ -21,10 +21,13 @@ tags: ["音乐", "OST", "器乐"]
 
 ## 曲目
 
-- [Mother](https://music.163.com/#/song?id=444324) — 02:12
-- [The Rain](https://music.163.com/#/song?id=444312) — 05:38
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=43083)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=43083" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=444324" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Mother</span><span class="ncm-time">02:12</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=444312" target="_blank" rel="noopener"><span class="ncm-idx">2</span><span class="ncm-name">The Rain</span><span class="ncm-time">05:38</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

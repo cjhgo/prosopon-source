@@ -22,9 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [我们没有在一起 (三立电视剧《偷心大圣PS男》片尾曲)](https://music.163.com/#/song?id=394163) — 04:41
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=39037)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=39037" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=394163" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">我们没有在一起 (三立电视剧《偷心大圣PS男》片尾曲)</span><span class="ncm-time">04:41</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑信息

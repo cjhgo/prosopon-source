@@ -27,9 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [Hymn To Life](https://music.163.com/#/song?id=1844236945) — 11:37
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=127251136)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=127251136" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=1844236945" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Hymn To Life</span><span class="ncm-time">11:37</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

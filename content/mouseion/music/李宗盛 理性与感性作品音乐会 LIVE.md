@@ -22,14 +22,17 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [问 (Live)](https://music.163.com/#/song?id=108143) — 03:28
-- [为你我受冷风吹 (Live)](https://music.163.com/#/song?id=108177) — 04:17
-- [明明白白我的心 (Live)](https://music.163.com/#/song?id=108141) — 04:40
-- [梦醒时分 (Live)](https://music.163.com/#/song?id=108145) — 04:43
-- [诱惑的街 (Live)](https://music.163.com/#/song?id=108180) — 05:23
-- [当爱已成往事 (Live)](https://music.163.com/#/song?id=108174) — 04:52
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=10749)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=10749" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=108143" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">问 (Live)</span><span class="ncm-time">03:28</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=108177" target="_blank" rel="noopener"><span class="ncm-idx">2</span><span class="ncm-name">为你我受冷风吹 (Live)</span><span class="ncm-time">04:17</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=108141" target="_blank" rel="noopener"><span class="ncm-idx">3</span><span class="ncm-name">明明白白我的心 (Live)</span><span class="ncm-time">04:40</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=108145" target="_blank" rel="noopener"><span class="ncm-idx">4</span><span class="ncm-name">梦醒时分 (Live)</span><span class="ncm-time">04:43</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=108180" target="_blank" rel="noopener"><span class="ncm-idx">5</span><span class="ncm-name">诱惑的街 (Live)</span><span class="ncm-time">05:23</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=108174" target="_blank" rel="noopener"><span class="ncm-idx">6</span><span class="ncm-name">当爱已成往事 (Live)</span><span class="ncm-time">04:52</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑信息

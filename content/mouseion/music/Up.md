@@ -27,9 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [Married Life (电影《飞屋环游记》配乐)](https://music.163.com/#/song?id=1709302) — 04:11
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=173193)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=173193" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=1709302" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Married Life (电影《飞屋环游记》配乐)</span><span class="ncm-time">04:11</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

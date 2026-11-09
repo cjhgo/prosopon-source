@@ -25,9 +25,12 @@ tags: ["音乐", "民谣", "现场"]
 
 ## 曲目
 
-- [Three Rules of Discipline and the Eight Rules of Attention](https://music.163.com/#/song?id=552175255) — 02:26
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=38319325)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=38319325" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=552175255" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Three Rules of Discipline and the Eight Rules of Attention</span><span class="ncm-time">02:26</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

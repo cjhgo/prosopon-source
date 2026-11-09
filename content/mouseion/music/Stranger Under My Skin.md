@@ -27,9 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [因为爱情 (电影《将爱情进行到底》主题曲)](https://music.163.com/#/song?id=64317) — 03:38
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=6355)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=6355" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=64317" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">因为爱情 (电影《将爱情进行到底》主题曲)</span><span class="ncm-time">03:38</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

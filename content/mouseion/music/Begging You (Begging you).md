@@ -26,9 +26,12 @@ tags: ["音乐", "韩国", "流行"]
 
 ## 曲目
 
-- [Begging You (Guide Ver.) (feat.Hyobin)](https://music.163.com/#/song?id=26128096) — 03:38
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=2393753)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=2393753" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=26128096" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Begging You (Guide Ver.) (feat.Hyobin)</span><span class="ncm-time">03:38</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

@@ -27,9 +27,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [Nightingale](https://music.163.com/#/song?id=20744782) — 05:46
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=1926665)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=1926665" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=20744782" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Nightingale</span><span class="ncm-time">05:46</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑简介

@@ -22,10 +22,13 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [亡命之徒(Live)](https://music.163.com/#/song?id=394488) — 06:15
-- [爱的箴言+花心+寂寞难耐+喝酒(Live)](https://music.163.com/#/song?id=394628) — 11:42
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=39066)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=39066" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=394488" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">亡命之徒(Live)</span><span class="ncm-time">06:15</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=394628" target="_blank" rel="noopener"><span class="ncm-idx">2</span><span class="ncm-name">爱的箴言+花心+寂寞难耐+喝酒(Live)</span><span class="ncm-time">11:42</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑信息

@@ -22,9 +22,12 @@ tags: ["音乐"]
 
 ## 曲目
 
-- [Sleep Alone (电影《陪安东尼度过漫长岁月》英文主题曲)](https://music.163.com/#/song?id=36539010) — 02:25
-
-> [▶ 在网易云播放整张专辑](https://music.163.com/#/album?id=3404003)
+<div class="ncm-player">
+<a class="ncm-play" href="https://music.163.com/#/album?id=3404003" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
+<div class="ncm-list">
+<a class="ncm-row" href="https://music.163.com/#/song?id=36539010" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">Sleep Alone (电影《陪安东尼度过漫长岁月》英文主题曲)</span><span class="ncm-time">02:25</span></a>
+</div>
+</div>
 
 <!-- gencover:begin -->
 ## 专辑信息
