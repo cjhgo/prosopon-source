@@ -79,6 +79,7 @@ views:
 ## 第二层(Quartz 规则 · 写时的最小集)
 
 - **文本链接 = wikilink `[[标题]]`**:只写文件名(不带路径),Quartz 按名全局解析,**跨 folder、挪 folder 都不断**。本地普通预览显字面(可读不可点);用 Obsidian 可点。**不模糊**——错字/异大小写会静默死链,需要别名就在目标 frontmatter 加 `aliases: [...]`。
+  - **唯一例外:全库文件名撞名**。Quartz 的 `shortest` 策略要求文件名唯一,撞名时 `[[名]]` 会退化成根路径并 404(实测:电影与歌都叫 Stand by Me)。此时必须写**路径限定** `[[mouseion/film/stand-by-me|显示名]]`。`python3 scripts/check_slug_collisions.py` 可查当前冲突。
 - **图片 = 标准相对路径 `![](相对路径)`**(cweijan 粘图即此,顺其自然)。本地普通预览直接认;上线由 engine 的自定义 transformer `FlattenLocalAssets` 在构建时改写成扁平 `/assets/<hash>`(解决 Quartz flat-url 下标准相对图会碎的坑,并与 slug/OSS 解耦)。**作者不用管**——写标准相对即可,两端都完整。别手写 `![[图]]`(本地预览器不认)。
 - **folder = 大类物理分组**(定稿:`生活/工作/读书/新知/随笔` + `mouseion/{books,film,music}`):给面包屑用。领域/主题**不靠 folder**,靠 frontmatter。
 - **assets 不手动搬**:图放哪个 folder 都行,`FlattenLocalAssets` + `AssetManifest` 构建时统一扁平化到 `/assets/<hash>`、出 `assets-manifest.json`;生产图走 OSS。

@@ -24,7 +24,9 @@ tags: ["音乐"]
 versions_count: 1
 ---
 <!-- music:cover:begin -->
+
 ![cover](image/Soul/cover.webp)
+
 <!-- music:cover:end -->
 
 ## 版本
@@ -37,6 +39,7 @@ versions_count: 1
 </div>
 
 <!-- music:album:begin -->
+
 ## 专辑
 
 A great voice singing great songs recorded by a great producer. That is 'Soul', the sixth studio album from multiplatinum selling, Grammy-winning, critically acclaimed Seal. Each song is a stone-cold soul classic, from Sam Cooke's 'A Change Is Gonna Come', Ben E. King's 'Stand By Me', and Ann Pebbles' 'I Can't Stand The Rain' to Harold Melvin And The Blue Notes' 'If You Don't Know Me By Now' and Otis Redding's 'I've Been Loving You Too Long'. Produced by David Foster, 'Soul' is the perfect coming together of man, material and moment.
@@ -47,4 +50,11 @@ A great voice singing great songs recorded by a great producer. That is 'Soul', 
 - 发行：2008-11-11
 - 评分：8.5（NeoDB）
 - 资料：[NeoDB](https://neodb.social/album/2bFApWOLY33oxSicKcRD8D) · [Douban](https://music.douban.com/subject/3238540/) · [网易云音乐](https://music.163.com/#/album?id=1991335)
+
+
+
 <!-- music:album:end -->
+
+[[落水狗]]
+[[八恶人]]
+[[mouseion/film/stand-by-me|stand by me]]
