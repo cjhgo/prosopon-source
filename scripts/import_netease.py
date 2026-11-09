@@ -28,6 +28,7 @@ import socket
 import sys
 import time
 import unicodedata
+import urllib.parse
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -296,9 +297,14 @@ def _track_line(song: dict) -> str:
 
 
 def _safe_stem(title: str) -> str:
-    table = {"/": "／", "\\": "＼", ":": "：", "*": "＊", "?": "？", '"': "＂", "<": "＜", ">": "＞", "|": "｜"}
+    # `%` 会让 FlattenLocalAssets 的 decodeURIComponent 抛 URI malformed, 必须换掉;
+    # `#` 在正文链接里是 fragment 分隔符, 一并换。
+    table = {
+        "/": "／", "\\": "＼", ":": "：", "*": "＊", "?": "？", '"': "＂",
+        "<": "＜", ">": "＞", "|": "｜", "%": "％", "#": "＃",
+    }
     stem = "".join(table.get(ch, ch) for ch in title).strip()
-    return stem[:120] or "untitled"
+    return stem[:60] or "untitled"  # 与既有条目一致的文件名截断长度
 
 
 def _frontmatter(fields: dict) -> str:
@@ -361,9 +367,12 @@ def build_note(album: dict, cand: dict | None, detail: dict, proxy: str) -> tupl
     }
 
     cover_rel = f"image/{_safe_stem(album['name'])}/cover.webp"
+    # 正文链接必须 URL-encode(空格/CJK/%/括号), 否则 FlattenLocalAssets 的
+    # decodeURIComponent 抛 "URI malformed"; frontmatter 的 cover 保持解码路径。
+    cover_url_enc = urllib.parse.quote(cover_rel, safe="/")
     body = "\n\n".join(
         [
-            f"{nc.COVER_BEGIN}\n![cover]({cover_rel})\n{nc.COVER_END}",
+            f"{nc.COVER_BEGIN}\n![cover]({cover_url_enc})\n{nc.COVER_END}",
             "## 曲目\n\n" + "\n".join(_track_line(s) for s in album["songs"]),
             nc.render_background("music", meta, source_label=label),
         ]
@@ -379,10 +388,20 @@ def write_note(album: dict, fields: dict, body: str, cover_url: str, cover_sourc
 
     raw = os.path.join(cover_dir, "cover.raw")
     dest = os.path.join(cover_dir, "cover.webp")
-    # NeoDB 封面可能被墙, 走代理; 网易云封面走直连
+    # NeoDB 封面可能被墙, 走代理; 网易云封面走直连。超时重试一次。
     use_proxy = proxy if cover_source.startswith("neodb:") else ""
-    imageops.download(cover_url, raw, referer=None, proxy=use_proxy)
-    imageops.to_webp(raw, dest, 700)
+    last = None
+    for attempt in range(2):
+        try:
+            imageops.download(cover_url, raw, referer=None, proxy=use_proxy)
+            imageops.to_webp(raw, dest, 700)
+            last = None
+            break
+        except Exception as exc:
+            last = exc
+            time.sleep(2)
+    if last is not None:
+        raise last
     try:
         os.remove(raw)
     except OSError:
@@ -421,14 +440,27 @@ def main(argv=None) -> int:
     proxy = _proxy()
     data = load_playlist(args.playlist, refresh=args.refresh)
     albums, orphans = albumize(data["songs"])
+    # 按 stem 和 frontmatter title 双查重: 既有条目的文件名有 60 字截断,
+    # 只比 stem 会给长名专辑造出重复条目(实测 Interstellar / Hateful Eight)
     existing = {
         os.path.splitext(f)[0] for f in os.listdir(MUSIC_DIR) if f.endswith(".md")
     }
+    existing_titles = set()
+    for name in os.listdir(MUSIC_DIR):
+        if not name.endswith(".md"):
+            continue
+        try:
+            fm, _, _ = nc.split_frontmatter(
+                open(os.path.join(MUSIC_DIR, name), encoding="utf-8").read()
+            )
+            existing_titles.add(fm.get("title", ""))
+        except Exception:
+            pass
 
     todo = []
     skipped = []
     for album in albums:
-        if _safe_stem(album["name"]) in existing:
+        if _safe_stem(album["name"]) in existing or album["name"] in existing_titles:
             skipped.append(album["name"])
             continue
         if args.only and album["name"] not in {x.strip() for x in args.only.split(",")}:
@@ -462,7 +494,16 @@ def main(argv=None) -> int:
             continue
         fields, body, cover_url, cover_source = build_note(album, cand, detail, proxy)
         try:
-            path = write_note(album, fields, body, cover_url, cover_source, proxy)
+            try:
+                path = write_note(album, fields, body, cover_url, cover_source, proxy)
+            except Exception:
+                # NeoDB 封面挂了(超时/404)就换网易云封面, 封面来源随之改写
+                if not cover_source.startswith("neodb:") or not album["cover"]:
+                    raise
+                path = write_note(
+                    album, fields, body, album["cover"], f"netease:{album['id']}", proxy
+                )
+                print(status + "  ↺ cover: netease fallback")
             created.append(os.path.basename(path))
             print(status + "  ✓")
         except Exception as exc:
