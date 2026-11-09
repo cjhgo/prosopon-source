@@ -1,6 +1,6 @@
 ---
 title: Music
-description: 音境 — 唱片与磁带
+description: 音境 — 以歌为单位
 ---
 
 ```base
@@ -11,12 +11,13 @@ filters:
 
 views:
   - type: cards
-    name: Cards
+    name: Songs
     image: note.cover
     cardSize: 220
     order:
       - title
       - creator
+      - album
       - year
     sort:
       - property: year
@@ -27,15 +28,46 @@ views:
     order:
       - title
       - creator
+      - album
       - year
-      - note.neodb_rating
+      - note.album_rating
       - tags
     sort:
       - property: year
         direction: DESC
     columnSize:
-      note.title: 320
+      note.title: 260
+      note.album: 220
       note.year: 80
+
+  - type: table
+    name: Albums
+    groupBy:
+      property: note.album
+      direction: ASC
+    order:
+      - title
+      - creator
+      - album
+      - year
+      - note.album_rating
+    sort:
+      - property: year
+        direction: DESC
+
+  - type: board
+    name: Tags
+    groupBy:
+      property: note.tags
+      direction: ASC
+    order:
+      - title
+      - creator
+      - album
+      - year
+    sort:
+      - property: year
+        direction: DESC
 
   - type: gallery
     name: Gallery
@@ -43,32 +75,6 @@ views:
     cardSize: 4
     order:
       - title
-      - year
-    sort:
-      - property: year
-        direction: DESC
-
-  - type: board
-    name: Board
-    groupBy:
-      property: note.tags
-      direction: ASC
-    order:
-      - title
-      - creator
-      - year
-    sort:
-      - property: year
-        direction: DESC
-
-  - type: list
-    name: List
-    groupBy:
-      property: note.tags
-      direction: ASC
-    order:
-      - title
-      - creator
       - year
     sort:
       - property: year

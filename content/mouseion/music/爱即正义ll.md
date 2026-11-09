@@ -2,40 +2,40 @@
 title: 爱即正义ll
 medium: music
 creator: 金玟岐 / 李常超 (Lao乾妈)
+album: 爱即正义ll
+album_id: 36911080
+year: 2017
+duration: "04:26"
 cover: mouseion/music/image/爱即正义ll/cover.webp
 cover_source: "netease:36911080"
 cover_status: auto
-year: 2017
 source: netease
-source_id: 36911080
-source_url: "https://music.163.com/#/album?id=36911080"
-release_date: 2017-12-07
-artist: ["金玟岐", "李常超 (Lao乾妈)"]
+source_id: 522510290
+source_url: "https://music.163.com/#/song?id=522510290"
+album_url: "https://music.163.com/#/album?id=36911080"
 label: ["网易游戏"]
-track_count: 3
 added: 2026-11-09
 tags: ["音乐"]
+versions_count: 1
 ---
-<!-- gencover:cover:begin -->
+<!-- music:cover:begin -->
 ![cover](image/%E7%88%B1%E5%8D%B3%E6%AD%A3%E4%B9%89ll/cover.webp)
-<!-- gencover:cover:end -->
+<!-- music:cover:end -->
 
-## 曲目
+## 版本
 
 <div class="ncm-player">
 <a class="ncm-play" href="https://music.163.com/#/album?id=36911080" target="_blank" rel="noopener" title="在网易云播放整张专辑" aria-label="在网易云播放整张专辑"><span class="ncm-play-icon">▶</span></a>
 <div class="ncm-list">
-<a class="ncm-row" href="https://music.163.com/#/song?id=522510290" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">爱即正义ll (网易游戏2017年度盛典主题曲)</span><span class="ncm-time">04:26</span></a>
+<a class="ncm-row" href="https://music.163.com/#/song?id=522510290" target="_blank" rel="noopener"><span class="ncm-idx">1</span><span class="ncm-name">爱即正义ll<span class="ncm-sub">金玟岐 / 李常超 (Lao乾妈) · 爱即正义ll</span></span><span class="ncm-time">04:26</span></a>
 </div>
 </div>
 
-<!-- gencover:begin -->
-## 专辑信息
+<!-- music:album:begin -->
+## 专辑
 
-- 艺人：金玟岐、李常超 (Lao乾妈)
+- 专辑：爱即正义ll（2017）
+- 艺人：金玟岐 / 李常超 (Lao乾妈)
 - 厂牌：网易游戏
 - 发行：2017-12-07
-- 曲目：3
-- 资料：[网易云音乐](https://music.163.com/#/album?id=36911080)
-
-<!-- gencover:end -->
+<!-- music:album:end -->

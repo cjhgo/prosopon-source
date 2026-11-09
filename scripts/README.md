@@ -11,6 +11,9 @@ python3 scripts/import_netease.py --playlist <id> [--dry-run] [--limit N] [--onl
                                 # 网易云歌单 → 专辑级 mouseion/music 条目(批量;NeoDB 补全, 匹配不过闸回落 NetEase)
                                 # --refresh-links: 回填曲目单曲链接 + 整专播放器 + 专辑链接
                                 # --resolve-missing: 非歌单老条目按曲名+艺人反查补链接
+                                # 注意: 仓库已迁到歌曲级模型, 专辑级导入需 --legacy-album-model
+python3 scripts/migrate_music_to_songs.py [--dry-run]
+                                # 专辑级条目 → 歌曲级(按标题聚合版本; 专辑降为字段)
 ```
 
 ## 依赖与约定

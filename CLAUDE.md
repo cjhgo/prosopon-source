@@ -106,11 +106,11 @@ source:       # 可选。摘录/外链的出处
 `content/mouseion/` 的条目由 `scripts/gencover.sh` 生成/补全，**不使用 genfront 的通用骨架**：
 
 ```yaml
-title:       # 条目标题（专辑/电影/书）
+title:       # 条目标题（歌曲/专辑/电影/书）
 medium:      # book | film | music
 added:       # YYYY-MM-DD
 cover:       # 从 content 根算相对路径，构建时扁平化到 OSS
-cover_source:  # neodb:<id> | generated
+cover_source:  # neodb:<id> | netease:<id> | generated
 cover_status:  # manual | auto | fallback
 creator:     # 作者/导演/艺人
 year:
@@ -122,10 +122,11 @@ source_id / source_url
 # 类型特有：director/cast/genres/release_date/country；author/publisher/isbn/pages；artist/label/track_count
 ```
 
-- **批量来路（音乐）**：`scripts/import_netease.py` 读网易云歌单，按专辑聚合生成条目。NetEase 出骨架（专辑/艺人/年/封面/我喜欢的曲目），NeoDB 只补简介、genres、评分、豆瓣链接；**匹配不过闸就回落 NetEase（`source: netease`），不伪造简介与评分**。匹配闸门 = 标题分层（精确/去括号基名）+ 艺人校验 + 年份复核——NeoDB 的 `alt_titles` 不可信，只认 show 标题。
-- **正文（音乐条目）固定结构**：`cover block` → `## 曲目`（只列我喜欢的那几首）→ `gencover` 简介块（`资料` 行带网易云专辑链接）。
-  - `## 曲目` 是**播放器 UI**（`<div class="ncm-player">`，样式在 engine `custom.scss`）：左侧播放钮链专辑页，每行 `序号 / 曲名 / 时长` 链单曲页。**是外观，不是内嵌播放**——网易云 outchain iframe 在第三方域报「资源加载失败」（`player/url` 对 `fee=1` 返回 `code:-110`），mp3 直链也已 404。
-  - 回填命令：`--refresh-links`（按歌单缓存重写曲目/播放器）、`--resolve-missing`（给非歌单条目按曲名+艺人反查）。
+- **音乐的心智模型（2026-11-09 定）**：**歌是基本单位，专辑只是统计维度**（流媒体之后人们以歌接触音乐；专辑是买盘时代的心智单位）。所以 `mouseion/music` 下**一个 md = 一首歌（作品）**，专辑不是实体、不建 md，只下沉为字段（`album / album_id / album_url / album_rating`，`description` 保留专辑短简介，正文 `## 专辑` 保留完整简介）。
+- **同名多版本合并**：`真夜中のドア` 的多个版本、`明天会更好` 原版/Live 都放在**同一个 md** 的 `## 版本` 段；合并口径是"同一作品"（去尾部括号后标题相同），同名但不同作品用 `标题（艺人）` 消歧。
+- **正文（音乐条目）固定结构**：`cover block` → `## 版本`（播放器 UI）→ `## 专辑`（简介 + 专辑字段 + 资料链接）。
+  - `## 版本` 是 `<div class="ncm-player">`（样式在 engine `custom.scss`）：播放钮链专辑页，每行 `序号 / 版本名 + 艺人·专辑 / 时长` 链单曲页。**是外观，不是内嵌播放**——网易云 outchain iframe 在第三方域报「资源加载失败」（`player/url` 对 `fee=1` 返回 `code:-110`），mp3 直链也已 404。
+- **迁移工具**：`scripts/migrate_music_to_songs.py` 把专辑级条目转成歌曲级（从既有专辑条目提取简介/评分/封面，按标题聚合版本）。`scripts/import_netease.py` 目前仍是专辑级导入，需加 `--legacy-album-model` 才运行，避免在歌曲级仓库里重新造出专辑条目。
 
 - **tags 是认知/审美策展字段**：目前是 32 个受控 facet（中国/历史/微观史/犯罪/黑色幽默/OST/器乐/华语/…），不再使用 NeoDB 原始标签直接生成 tag 页。
 - `raw_tags` 保留原始数据，供以后人工筛选；不参与 tag 页。

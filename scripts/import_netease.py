@@ -720,7 +720,19 @@ def main(argv=None) -> int:
         "--resolve-missing", action="store_true",
         help="给没有网易云链接的条目按曲名+艺人反查单曲, 补链接/播放器",
     )
+    parser.add_argument(
+        "--legacy-album-model", action="store_true",
+        help="按旧的专辑级模型生成条目(仓库现已迁到歌曲级, 慎用)",
+    )
     args = parser.parse_args(argv)
+
+    if not args.legacy_album_model and not (args.refresh_links or args.resolve_missing):
+        print(
+            "拒绝运行: mouseion/music 已迁到「一首歌一个 md」的歌曲级模型, "
+            "本脚本的导入路径仍是专辑级。确需生成专辑条目请加 --legacy-album-model。",
+            file=sys.stderr,
+        )
+        return 2
 
     proxy = _proxy()
     data = load_playlist(args.playlist, refresh=args.refresh)
