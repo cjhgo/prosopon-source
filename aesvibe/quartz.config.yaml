@@ -5,7 +5,7 @@ configuration:
   pageTitle: AESVIBE
   pageTitleSuffix: ""
   enableSPA: false
-  enablePopovers: false
+  enablePopovers: true
   analytics: null
   locale: zh-CN
   baseUrl: www.aesvibe.fun

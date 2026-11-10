@@ -40,9 +40,15 @@ scripts/publish.sh
 
 1. `QUARTZ_SITE=aesvibe` + `QUARTZ_CONFIG=aesvibe/quartz.config.yaml` 构建
 2. `postbuild.py`：内部链接补 `.html`（OSS 没有 nginx `$uri.html` 回退）、注入 `noindex`、写 `robots.txt`、删 `assets-manifest.json` 等
-3. `bin/oss sync-site public/ --bucket aesvibe-fun --region cn-hongkong`（`--delete` 清 stale）
+3. `bin/oss sync-site /tmp/aesvibe-public --bucket aesvibe-fun --region cn-hongkong`（`--delete` 清 stale）
 
-**图片和 HTML 同桶**：生产时 `FLATTEN_ASSETS=1`、`ASSET_BASE_URL` 留空 → `public/assets/<hash>`，HTML 引用 `/assets/<hash>`；一次 sync 全上去。预览时不扁平化，按 per-md 相对路径。
+构建产物都在 `/tmp`，源目录只留 `content/` + 配置 + 脚本：
+
+- `/tmp/aesvibe-preview` — 预览产物
+- `/tmp/aesvibe-public` — 发布产物
+- `/tmp/aesvibe-cache` — `QUARTZ_CACHE_DIR`（asset registry）
+
+**图片和 HTML 同桶**：生产时 `FLATTEN_ASSETS=1`、`ASSET_BASE_URL` 留空 → 构建目录里 `assets/<hash>`，HTML 引用 `/assets/<hash>`；一次 sync 全上去。预览时不扁平化，按 per-md 相对路径。
 
 ## 隔离规则
 

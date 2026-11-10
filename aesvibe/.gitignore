@@ -1,2 +1,2 @@
-public/
-.quartz-cache/
+__pycache__/
+.DS_Store

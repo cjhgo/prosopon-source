@@ -8,6 +8,9 @@ ENGINE="${PROSOPON_ENGINE:-$(cd "$SELF/../../prosopon-engine" && pwd)}"
 PORT="${1:-8099}"
 WSPORT=$((PORT + 20000))
 [ "$WSPORT" -gt 60000 ] && WSPORT=$((PORT + 1))
+# 构建产物/缓存都放 /tmp，源目录只留 content/config/scripts。
+PREVIEW_DIR="${AESVIBE_PREVIEW_DIR:-/tmp/aesvibe-preview}"
+CACHE_DIR="${AESVIBE_CACHE_DIR:-/tmp/aesvibe-cache}"
 
 if [ -d "$HOME/.nvm/versions/node" ]; then
   LATEST="$(ls -d "$HOME"/.nvm/versions/node/v* 2>/dev/null | sort -V | tail -1)"
@@ -21,8 +24,8 @@ fi
 unset ASSET_BASE_URL FLATTEN_ASSETS
 export QUARTZ_SITE=aesvibe
 export QUARTZ_CONFIG="$SELF/quartz.config.yaml"
-export QUARTZ_CACHE_DIR="$SELF/.quartz-cache"
+export QUARTZ_CACHE_DIR="$CACHE_DIR"
 
-echo "▶ 预览: $SELF/content → http://localhost:$PORT  (Ctrl-C 退出)"
+echo "▶ 预览: $SELF/content → http://localhost:$PORT  (Ctrl-C 退出; build: $PREVIEW_DIR)"
 cd "$ENGINE/quartz"
-exec npx quartz build -d "$SELF/content" -o "$SELF/public" --serve --port "$PORT" --wsPort "$WSPORT"
+exec npx quartz build -d "$SELF/content" -o "$PREVIEW_DIR" --serve --port "$PORT" --wsPort "$WSPORT"

@@ -13,7 +13,9 @@ AOPS="${ALIYUN_OPS:-$(cd "$SELF/../../oikos/prosopon/skills/aliyun-ops" && pwd)}
 BUCKET="${AESVIBE_BUCKET:-aesvibe-fun}"
 REGION="${AESVIBE_REGION:-cn-hongkong}"
 DOMAIN="${AESVIBE_DOMAIN:-www.aesvibe.fun}"
-PUBLIC="$SELF/public"
+# 构建产物/缓存都放 /tmp，源目录只留 content/config/scripts。
+PUBLIC="${AESVIBE_PUBLIC_DIR:-/tmp/aesvibe-public}"
+CACHE_DIR="${AESVIBE_CACHE_DIR:-/tmp/aesvibe-cache}"
 
 if [ -d "$HOME/.nvm/versions/node" ]; then
   LATEST="$(ls -d "$HOME"/.nvm/versions/node/v* 2>/dev/null | sort -V | tail -1)"
@@ -29,7 +31,7 @@ unset ASSET_BASE_URL
 export FLATTEN_ASSETS=1
 export QUARTZ_SITE=aesvibe
 export QUARTZ_CONFIG="$SELF/quartz.config.yaml"
-export QUARTZ_CACHE_DIR="$SELF/.quartz-cache"
+export QUARTZ_CACHE_DIR="$CACHE_DIR"
 
 echo "▶ [1/3] build"
 rm -rf "$PUBLIC"
