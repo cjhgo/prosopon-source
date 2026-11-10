@@ -37,6 +37,13 @@ QUARTZ_PROD=1 ASSET_BASE_URL="$ASSET_BASE" npx quartz build -d "$CONTENT"
 NIMG=$(find "$ASSET_CACHE" -type f 2>/dev/null | wc -l | tr -d ' ')
 echo "  ✓ 构建完成(缓存 assets: ${NIMG}; OSS 增量同步)"
 
+# /aestic/：所有被引用配图的洗牌墙（派生自 build 产出的 manifest + contentIndex）
+AESTIC_SITE="$ENGINE/aestic-site"
+if [ -f "$PUBLIC/static/assets-manifest.json" ] && [ -f "$AESTIC_SITE/build.py" ]; then
+  ASSET_BASE_URL="$ASSET_BASE" python3 "$AESTIC_SITE/build.py" \
+    "$PUBLIC/static/assets-manifest.json" "$PUBLIC/static/contentIndex.json" "$PUBLIC/aestic"
+fi
+
 echo "▶ [2/4] 图片 → OSS($ASSET_BASE)"
 if [ -d "$ASSET_CACHE" ] && [ "$NIMG" -gt 0 ]; then
   "$ALIYUN_OPS/bin/oss" sync "$ASSET_CACHE" assets/
