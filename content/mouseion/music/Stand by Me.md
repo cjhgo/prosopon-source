@@ -38,6 +38,8 @@ versions_count: 1
 </div>
 </div>
 
+[[film/stand-by-me]]
+
 <!-- music:album:begin -->
 
 ## 专辑
@@ -55,6 +57,3 @@ A great voice singing great songs recorded by a great producer. That is 'Soul', 
 
 <!-- music:album:end -->
 
-[[落水狗]]
-[[八恶人]]
-[[mouseion/film/stand-by-me|stand by me]]
