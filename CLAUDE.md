@@ -1,6 +1,6 @@
 # prosopon-source — 数字花园的内容源(Quartz content vault)
 
-> **两站点**：主花园 `content/` + 独立小站 `aesvibe/`。后者见 [`aesvibe/README.md`](aesvibe/README.md)，与主站隔离，不走本文件的发布链。
+> **三处部署**：主花园 `content/` + 独立小站 `aesvibe/` + 有状态服务 `todo/`。后两者各自见自己的 README，与主站隔离，不走本文件的发布链。
 >
 > 本 repo 是 **[prosopon-engine](../prosopon-engine)(Quartz)的内容源**;内容是**本体**,engine 是可换载体(图=本体,见下第一层)。
 > 一句话定位:这里放 markdown + 随文图/视频,被 Quartz 构建成 junhangc.cn,将来也被发布 skill 读去发小红书——**一本体,多载体**。
@@ -13,8 +13,10 @@
 |---|---|---|---|---|
 | **prosopon（主花园）** | `content/` | `prosopon.junhangc.cn`（ECS + `assets.junhangc.cn`） | `scripts/deploy.sh` | 本文下面的「核心原则 / 第二层 / 第三层」 |
 | **aesvibe（独立小站）** | `aesvibe/content/` | `www.aesvibe.fun`（香港 OSS，HTML+图同桶） | `aesvibe/scripts/publish.sh` | `aesvibe/README.md`；frontmatter 最小集 |
+| **todo（服务）** | `todo/`（代码，不是 md） | `todo.junhangc.cn`（ECS systemd + nginx 反代） | `todo/deploy.sh` | `todo/README.md`；落地页 `/`、自用 `/me`、多空间 `/s/<id>`；状态在 `/var/lib/todo-junhangc`，重复部署不碰 |
 
 - `aesvibe/` 是 `content/` 的兄弟目录，不在主站 vault 里；主站 `deploy.sh` 不会构建它。
+- `todo/` 是唯一的**有状态**站点：node 零依赖服务 + systemd + nginx 反代 + 单密码登录。它和内容无关，放在本 repo 只是共用同一套发布/运维链（阿里云 ECS、泛域名证书）。
 - **隔离**：aesvibe 不挂 ICP、不链回主站、不引用 `assets.junhangc.cn`、全量 `noindex`；站点在 `www`，apex 只走邮箱。
 - **图片**：aesvibe 预览按 per-md 相对路径；生产 `FLATTEN_ASSETS=1`、`ASSET_BASE_URL` 留空 → `public/assets/<hash>`，和 HTML 同桶；一次 `oss sync-site` 全上传。
 - **写作**：aesvibe 用 `title / date / tags / description / draft` 最小 frontmatter；分类是 `notes/ + visual/ + about`，不套主站的 `生活/工作/读书/新知`。
