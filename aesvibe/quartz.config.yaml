@@ -1,0 +1,154 @@
+# yaml-language-server: $schema=../../prosopon-engine/quartz/quartz/plugins/quartz-plugins.schema.json
+# aesvibe.fun — 独立小站，复用 prosopon-engine 的 framework。
+# 站点配置与主花园分开；定制策略在 prosopon-engine/quartz/sites/aesvibe/site.ts。
+configuration:
+  pageTitle: AESVIBE
+  pageTitleSuffix: ""
+  enableSPA: false
+  enablePopovers: false
+  analytics: null
+  locale: zh-CN
+  baseUrl: www.aesvibe.fun
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Newsreader
+      body: Inter
+      code: JetBrains Mono
+    colors:
+      lightMode:
+        light: "#fbf7f0"
+        lightgray: "#e7ddd0"
+        gray: "#9a8d7e"
+        darkgray: "#5a4f45"
+        dark: "#1f1a16"
+        secondary: "#b4532a"
+        tertiary: "#4f6b5d"
+        highlight: "rgba(180, 83, 42, 0.10)"
+        textHighlight: "#e8c9a888"
+      darkMode:
+        light: "#12100e"
+        lightgray: "#2a231e"
+        gray: "#7d7064"
+        darkgray: "#c9b8a6"
+        dark: "#f0e6da"
+        secondary: "#e08a5f"
+        tertiary: "#8fae9b"
+        highlight: "rgba(224, 138, 95, 0.12)"
+        textHighlight: "#6b4a3a88"
+  links:
+    markdownLinkResolution: shortest
+  contentIndex:
+    enableSiteMap: false
+    enableRSS: false
+  publishAssets: referenced
+plugins:
+  - source: "@quartz-community/syntax-highlighting"
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 30
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 40
+  - source: "@quartz-community/table-of-contents"
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
+  - source: "@quartz-community/description"
+    enabled: true
+    order: 70
+  - source: "@quartz-community/latex"
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
+  - source: "@quartz-community/quartz-fonts"
+    enabled: true
+  - source: "@quartz-community/alias-redirects"
+    enabled: true
+  - source: "@quartz-community/favicon"
+    enabled: true
+  - source: "@quartz-community/content-page"
+    enabled: true
+  - source: "@quartz-community/folder-page"
+    enabled: true
+  - source: "@quartz-community/tag-page"
+    enabled: true
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+  - source: "@quartz-community/content-meta"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+  - source: "@quartz-community/tag-list"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 30
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+  - source: "@quartz-community/reader-mode"
+    enabled: true
+    layout:
+      position: left
+      priority: 35
+      group: toolbar
+  - source: "@quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []

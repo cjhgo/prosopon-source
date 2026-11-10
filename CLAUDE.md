@@ -1,7 +1,24 @@
 # prosopon-source — 数字花园的内容源(Quartz content vault)
 
+> **两站点**：主花园 `content/` + 独立小站 `aesvibe/`。后者见 [`aesvibe/README.md`](aesvibe/README.md)，与主站隔离，不走本文件的发布链。
+>
 > 本 repo 是 **[prosopon-engine](../prosopon-engine)(Quartz)的内容源**;内容是**本体**,engine 是可换载体(图=本体,见下第一层)。
 > 一句话定位:这里放 markdown + 随文图/视频,被 Quartz 构建成 junhangc.cn,将来也被发布 skill 读去发小红书——**一本体,多载体**。
+
+---
+
+## 两站点（当前结构）
+
+| 站 | 内容 | 域名 / 载体 | 发布 | 规则 |
+|---|---|---|---|---|
+| **prosopon（主花园）** | `content/` | `prosopon.junhangc.cn`（ECS + `assets.junhangc.cn`） | `scripts/deploy.sh` | 本文下面的「核心原则 / 第二层 / 第三层」 |
+| **aesvibe（独立小站）** | `aesvibe/content/` | `www.aesvibe.fun`（香港 OSS，HTML+图同桶） | `aesvibe/scripts/publish.sh` | `aesvibe/README.md`；frontmatter 最小集 |
+
+- `aesvibe/` 是 `content/` 的兄弟目录，不在主站 vault 里；主站 `deploy.sh` 不会构建它。
+- **隔离**：aesvibe 不挂 ICP、不链回主站、不引用 `assets.junhangc.cn`、全量 `noindex`；站点在 `www`，apex 只走邮箱。
+- **图片**：aesvibe 预览按 per-md 相对路径；生产 `FLATTEN_ASSETS=1`、`ASSET_BASE_URL` 留空 → `public/assets/<hash>`，和 HTML 同桶；一次 `oss sync-site` 全上传。
+- **写作**：aesvibe 用 `title / date / tags / description / draft` 最小 frontmatter；分类是 `notes/ + visual/ + about`，不套主站的 `生活/工作/读书/新知`。
+- 详细发布/隔离说明见 [`aesvibe/README.md`](aesvibe/README.md)。
 
 ---
 
@@ -28,7 +45,7 @@
 ### 参考区 `content/_refer/`(预览可见、上线忽略)
 
 放示例/草稿/写作参考:本地 `preview.sh` 照常渲染,**上线自动忽略**。
-机制(复用 Quartz 原生规则):`deploy.sh` 设 `QUARTZ_PROD=1` → engine 的 `quartz.ts` 里 `ignorePatterns` 才追加 `_refer/**`;预览不设,故可见。目录内示例见 `_refer/README-图文混排.md`。
+机制(复用 Quartz 原生规则):`deploy.sh` 设 `QUARTZ_PROD=1` → engine 的 `sites/prosopon/site.ts` 里 `ignorePatterns` 才追加 `_refer/**`;预览不设,故可见。目录内示例见 `_refer/README-图文混排.md`。
 
 ### 图文混排(md 只到块级图;布局用 raw HTML + 工具类)
 

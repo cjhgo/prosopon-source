@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1614"/>
+      <stop offset="1" stop-color="#b4532a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="610" cy="120" r="54" fill="#e08a5f" opacity="0.75"/>
+  <text x="56" y="250" fill="#f0e6da" font-family="Georgia, serif" font-size="64">aesvibe</text>
+  <text x="58" y="296" fill="#f0e6da" opacity="0.65" font-family="Georgia, serif" font-size="22">a test image</text>
+</svg>
